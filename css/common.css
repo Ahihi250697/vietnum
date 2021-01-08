@@ -3,6 +3,17 @@
 body {
     font-family: 'Noto Sans JP', sans-serif;
     font-size: 1.6rem;
+    color: #333333;
+    font-weight: 400;
+}
+
+.warpper {
+    min-width: 1200px;
+}
+
+.l-container {
+    width: 1120px;
+    margin: 0 auto;
 }
 
 p,
@@ -16,6 +27,12 @@ li {
 @media screen and (max-width: 768px) {
     body {
         font-size: 1.4rem;
+    }
+    .warpper {
+        min-width: 100%;
+    }
+    .l-container {
+        width: 100%;
     }
     p,
     dd,
