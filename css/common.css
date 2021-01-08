@@ -55,6 +55,19 @@ body > main {
     overflow: hidden;
   }
 }
-/*# sourceMappingURL=common.css.map */
+.nav {
+  width: 100%;
+}
+.nav .nav__logo {
+  width: 100%;
+  max-width: 38.5rem;
+  text-align: right;
+  margin-left: 4rem;
+}
+.nav .nav__logo span {
+  font-size: 1.8rem;
+  color: #00655a;
+  font-family: font_clearsan, sans-serif;
+}
 
 /*# sourceMappingURL=common.css.map */
