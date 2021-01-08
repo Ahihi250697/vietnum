@@ -1,2 +1,9 @@
 node_modules
 app
+source
+gulpfile.js
+.vscode
+package-lock.json
+*.json
+package.json
+css/sourcemap
