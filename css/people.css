@@ -1,0 +1,419 @@
+.people .firstView-h2 .text-nihon, .people .interview-h3 .text-nihon {
+    font-size: 3.5rem;
+}
+
+.people .interview-h3 .text-en {
+    font-size: 2rem;
+}
+
+.people .interview-infor-content {
+    font-size: 1.5rem;
+}
+
+.people .interview-infor-name .infor-text {
+    font-size: 1.2rem;
+}
+
+.people .firstView-h2 .text-en, .people .interview-h3 .text-en,
+.people .interview-figure-name {
+    font-family: 'clearsans-M', sans-serif;
+}
+
+@font-face {
+    font-family: 'clearsans-B';
+    src: url("../assets/fonts/ClearSans-Bold.woff");
+}
+
+@font-face {
+    font-family: 'clearsans-M';
+    src: url("../assets/fonts/ClearSans-Medium.woff");
+}
+
+@font-face {
+    font-family: 'clearsans-R';
+    src: url("../assets/fonts/ClearSans-Regular.woff");
+}
+
+@font-face {
+    font-family: 'clearsans-L';
+    src: url("../assets/fonts/ClearSans-Light.woff");
+}
+
+@font-face {
+    font-family: 'clearsans-T';
+    src: url("../assets/fonts/ClearSans-Thin.woff");
+}
+
+.library-cm img {
+    max-width: 100%;
+    display: block;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+.library-cm a {
+    display: block;
+    color: inherit;
+    -webkit-transition: opacity .3s ease;
+            transition: opacity .3s ease;
+}
+
+.library-cm a:hover {
+    opacity: .8;
+}
+
+.library-cm button {
+    color: inherit;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.library-cm button, .library-cm a {
+    outline: none;
+}
+
+.library-cm p {
+    line-height: 1.6;
+}
+
+.library-cm p.line-p {
+    margin: 0 auto;
+    padding: 75px 0 110px;
+    text-align: justify;
+}
+
+.library-cm .d-block {
+    display: block;
+}
+
+.people .firstView {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 0;
+}
+
+.people .firstView-img {
+    max-width: calc(50% + 470px);
+    width: 100%;
+}
+
+.people .firstView-img img {
+    width: 100%;
+}
+
+.people .firstView-title {
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    z-index: 1;
+    width: 100%;
+    padding: 0 20px 0;
+}
+
+.people .firstView-h2 {
+    max-width: 1120px;
+    margin: 0 auto;
+    width: 100%;
+    color: white;
+}
+
+.people .firstView-h2 span {
+    display: block;
+}
+
+.people .firstView-h2 .text-en {
+    font-weight: normal;
+    color: #4fd1ed;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: .3rem;
+}
+
+.people .firstView-h2 .text-nihon {
+    line-height: 1.4;
+    margin-top: 20px;
+    letter-spacing: .2rem;
+}
+
+.people .firstView-box {
+    max-width: calc(50% - 80px);
+    position: absolute;
+    width: 100%;
+    max-height: 395px;
+    height: 50vw;
+    background-color: #008177;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    z-index: -1;
+}
+
+.people .interview {
+    margin-top: 180px;
+}
+
+.people .interview-h3 {
+    font-weight: 500;
+    text-align: center;
+}
+
+.people .interview-h3 .text-en {
+    color: #008177;
+    line-height: 1;
+}
+
+.people .interview-h3 .text-nihon {
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+.people .interview-groupOne .interview-figure > * {
+    width: calc(100%/6);
+}
+
+.people .interview-groupOne .interview-figure:nth-child(3) {
+    z-index: 3;
+}
+
+.people .interview-groupOne .interview-figure:nth-child(4) {
+    z-index: 2;
+}
+
+.people .interview-groupOne .interview-figure:nth-child(5) {
+    z-index: 1;
+}
+
+.people .interview-groupOne .color1 {
+    color: #187f77;
+}
+
+.people .interview-groupOne .color2 {
+    color: #005e81;
+}
+
+.people .interview-groupOne .color3 {
+    color: #187f77;
+}
+
+.people .interview-groupOne .color4 {
+    color: #888b3f;
+}
+
+.people .interview-groupOne .color5 {
+    color: #888b3f;
+}
+
+.people .interview-groupOne .color6 {
+    color: #005e81;
+}
+
+.people .interview-groupOne .interview-infor-line.color1 {
+    background-color: #187f77;
+}
+
+.people .interview-groupOne .interview-infor-line.color2 {
+    background-color: #005e81;
+}
+
+.people .interview-groupOne .interview-infor-line.color3 {
+    background-color: #187f77;
+}
+
+.people .interview-groupOne .interview-infor-line.color4 {
+    background-color: #888b3f;
+}
+
+.people .interview-groupOne .interview-infor-line.color5 {
+    background-color: #888b3f;
+}
+
+.people .interview-groupOne .interview-infor-line.color6 {
+    background-color: #005e81;
+}
+
+.people .interview-groupTwo .interview-figure > * {
+    width: calc(100%/5);
+}
+
+.people .interview-groupTwo .interview-figure:nth-child(2) {
+    z-index: 2;
+}
+
+.people .interview-groupTwo .interview-figure:nth-child(3) {
+    z-index: 1;
+}
+
+.people .interview-groupTwo .color1 {
+    color: #187f77;
+}
+
+.people .interview-groupTwo .color2 {
+    color: #005e81;
+}
+
+.people .interview-groupTwo .color3 {
+    color: #187f77;
+}
+
+.people .interview-groupTwo .color4 {
+    color: #888b3f;
+}
+
+.people .interview-groupTwo .color5 {
+    color: #005e81;
+}
+
+.people .interview-groupTwo .interview-img {
+    max-width: 930px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.people .interview-groupTwo .interview-infor-line.color1 {
+    background-color: #187f77;
+}
+
+.people .interview-groupTwo .interview-infor-line.color2 {
+    background-color: #005e81;
+}
+
+.people .interview-groupTwo .interview-infor-line.color3 {
+    background-color: #187f77;
+}
+
+.people .interview-groupTwo .interview-infor-line.color4 {
+    background-color: #888b3f;
+}
+
+.people .interview-groupTwo .interview-infor-line.color5 {
+    background-color: #005e81;
+}
+
+.people .interview-img {
+    position: relative;
+}
+
+.people .interview-img span {
+    display: block;
+}
+
+.people .interview-figure {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: relative;
+    z-index: 0;
+}
+
+.people .interview-figure:nth-child(1) .interview-figure-name {
+    left: 0;
+}
+
+.people .interview-figure:nth-child(2) .interview-figure-name {
+    left: 0;
+}
+
+.people .interview-figure:nth-child(3) .interview-figure-name {
+    left: 0;
+}
+
+.people .interview-figure:nth-child(4) .interview-figure-name {
+    right: 0;
+}
+
+.people .interview-figure:nth-child(5) .interview-figure-name {
+    right: 0;
+}
+
+.people .interview-figure:nth-child(6) .interview-figure-name {
+    right: 0;
+}
+
+.people .interview-figure > * {
+    min-width: -webkit-max-content;
+    min-width: -moz-max-content;
+    min-width: max-content;
+}
+
+.people .interview-figure:not(:first-child) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.people .interview-figure-wrap {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    position: relative;
+    z-index: 0;
+}
+
+.people .interview-figure-wrap.noneImg {
+    visibility: hidden;
+}
+
+.people .interview-figure-name {
+    position: absolute;
+    top: 0;
+    letter-spacing: .2rem;
+    -webkit-writing-mode: tb-rl;
+        -ms-writing-mode: tb-rl;
+            writing-mode: tb-rl;
+    z-index: 1;
+}
+
+.people .interview-infor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.people .interview-infor-lists {
+    width: calc(50% - 20px);
+}
+
+.people .interview-infor-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    max-width: 450px;
+}
+
+.people .interview-infor-list span {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .library-cm p.line-p {
+        padding: 40px 0 70px;
+    }
+}
+
+/*# sourceMappingURL=sourcemap/people.css.map */
