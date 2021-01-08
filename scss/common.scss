@@ -1,13 +1,48 @@
 @charset "UTF-8";
 @import "../css/functions.scss";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
 body {
-    font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ ゴシック", sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     font-size: 1.6rem;
+    color: #333333;
+    font-weight: 400;
+}
+
+.warpper {
+    min-width: 1200px;
+    overflow: hidden;
+    display: block;
+}
+
+.l-container {
+    width: 1120px;
+    margin: 0 auto;
+}
+
+p,
+dd,
+td,
+th,
+li {
+    line-height: 2.5em;
 }
 
 @media screen and (max-width: 768px) {
     body {
         font-size: 1.4rem;
+    }
+    .warpper {
+        min-width: 100%;
+    }
+    .l-container {
+        width: 100%;
+    }
+    p,
+    dd,
+    td,
+    th,
+    li {
+        line-height: 1.8em;
     }
 }
 
@@ -21,11 +56,5 @@ body>main {
     }
 }
 
-.warpper {
-    max-width: 100%;
-    min-width: 1600px;
-}
 
-.aa {
-    font-size: 40rem;
-}
+/*# sourceMappingURL=common.css.map */

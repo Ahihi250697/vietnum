@@ -1,0 +1,81 @@
+.library-cm .style-title {
+    font-size: 1em;
+}
+
+.library-cm .style-title .text-en {
+    font-size: 3em;
+}
+
+.library-cm .style-title .text-nihon {
+    font-size: 2.8em !important;
+}
+
+.library-cm img {
+    max-width: 100%;
+    display: block;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+.library-cm a {
+    display: block;
+    color: inherit;
+    -webkit-transition: opacity .3s ease;
+            transition: opacity .3s ease;
+}
+
+.library-cm a:hover {
+    opacity: .8;
+}
+
+.library-cm button {
+    color: inherit;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.library-cm button, .library-cm a {
+    outline: none;
+}
+
+.library-cm p {
+    line-height: 1.6;
+}
+
+.library-cm p.line-p {
+    margin: 0 auto;
+    padding: 75px 0 110px;
+    text-align: justify;
+}
+
+.library-cm .d-block {
+    display: block;
+}
+
+.library-cm .style-title {
+    letter-spacing: .4rem;
+    line-height: 1;
+    font-weight: 500;
+}
+
+.library-cm .style-title span {
+    display: block;
+    text-align: center;
+}
+
+.library-cm .style-title .text-en {
+    font-family: 'Oswald', sans-serif;
+    color: #2e6fef;
+}
+
+.library-cm .style-title .text-nihon {
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .library-cm p.line-p {
+        padding: 40px 0 70px;
+    }
+}
+
+/*# sourceMappingURL=sourcemap/mesaage.css.map */
