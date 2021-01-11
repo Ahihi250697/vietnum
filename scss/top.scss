@@ -424,3 +424,59 @@ sans-serif;
         }
     }
 }
+
+.link-area {
+    width: 100%;
+    .link__container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        a {
+            width: 100%;
+            max-width: calc((100% / 3) - 15px);
+            figure {
+                position: relative;
+                figcaption {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    color: #fff;
+                    letter-spacing: .3rem;
+                    line-height: 1.4;
+                    padding: 1.2rem;
+                    span {
+                        display: block;
+                        font-family: font_clearsan_medium;
+                    }
+                }
+            }
+            p {
+                text-align: right;
+                color: #333;
+                line-height: 2;
+                &.has-icon {
+                    .f-icon {
+                        position: relative;
+                        margin-left: 1.1rem;
+                        &::after {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            transform: translate(-6px, -6px);
+                            z-index: -1;
+                        }
+                    }
+                    .f-icon,
+                    .f-icon:after {
+                        width: 1.1rem;
+                        height: 1.1rem;
+                        background-color: #fff;
+                        border: 2px solid #048198;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}

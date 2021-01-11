@@ -8,7 +8,7 @@ body {
 
 .warpper {
     max-width: 100%;
-    min-width: 1600px;
+    min-width: 1200px;
     overflow: hidden;
     display: block;
 }
@@ -73,6 +73,10 @@ figure {
     top: 0;
     left: 0;
     z-index: 1024;
+    @include ipadpro {
+        height: 80px;
+        background-color: #fff
+    }
     .nav__logo {
         width: 100%;
         max-width: 38.5rem;
@@ -89,9 +93,16 @@ figure {
             font-family: $font_clearSan_medium;
             font-weight: 400;
         }
+        @include ipadpro {
+            margin-left: 2rem;
+        }
     }
     .nav__navbar {
         width: 100%;
+        transition: all .3s ease;
+        &.active {
+            transform: translateX(0%);
+        }
         .nav__menu {
             width: 100%;
             display: flex;
@@ -119,5 +130,109 @@ figure {
                 }
             }
         }
+        @include ipadpro {
+            position: fixed;
+            top: 80px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #000;
+            transform: translateX(150%);
+            .nav__menu {
+                flex-wrap: wrap;
+                justify-content: space-between;
+                li {
+                    width: 100%;
+                    max-width: 50%;
+                    margin-top: 3rem;
+                    .nav-item {
+                        color: #fff;
+                        &.nav-entry {
+                            margin: 0;
+                            width: auto;
+                            height: auto;
+                            justify-content: flex-start;
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.hamburger {
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    position: fixed;
+    z-index: 1024;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    transition: all .3s ease;
+    &.active {
+        span {
+            &:first-child {
+                transform: translateY(-50%) rotate(45deg);
+            }
+            &:last-child {
+                transform: translateY(-50%) rotate(-45deg);
+            }
+        }
+    }
+    span {
+        width: 30px;
+        height: 2px;
+        background-color: #333;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 3px;
+        transition: all .3s ease;
+        &:first-child {
+            transform: translateY(-50%) translateY(5px);
+        }
+        &:last-child {
+            transform: translateY(-50%) translateY(-5px);
+        }
+    }
+}
+
+.footer-area {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    .footer__item {
+        width: 100%;
+        max-width: 25%;
+        .footer__title {
+            font-size: 2rem;
+            color: #333;
+            font-family: font_clearsan_medium;
+        }
+        ul {
+            margin-top: 3.5rem;
+            display: flex;
+            flex-direction: column;
+            li {
+                a {
+                    display: block;
+                    color: #333;
+                }
+            }
+        }
+    }
+}
+
+.copy-right {
+    width: 100%;
+    padding: 4rem 0;
+    border-top: 1px solid #d2d2d2;
+    p {
+        text-align: center;
+        color: #333;
+        font-family: $font_clearSan_medium;
+        letter-spacing: .1rem;
     }
 }
