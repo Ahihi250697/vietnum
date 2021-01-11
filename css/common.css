@@ -1,13 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap");
 body {
   font-family: "Noto Sans JP", sans-serif;
-  font-size: 1.6rem;
-  color: #333333;
   font-weight: 400;
 }
 
 .warpper {
-  min-width: 1200px;
+  max-width: 100%;
+  min-width: 1600px;
   overflow: hidden;
   display: block;
 }
@@ -55,8 +54,19 @@ body > main {
     overflow: hidden;
   }
 }
+figure img {
+  display: block;
+  width: 100%;
+}
+
 .nav {
   width: 100%;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1024;
 }
 .nav .nav__logo {
   width: 100%;
@@ -64,10 +74,46 @@ body > main {
   text-align: right;
   margin-left: 4rem;
 }
+.nav .nav__logo img {
+  width: 100%;
+  display: block;
+  margin-bottom: 0.5rem;
+}
 .nav .nav__logo span {
   font-size: 1.8rem;
   color: #00655a;
-  font-family: font_clearsan, sans-serif;
+  font-family: font_clearsan_medium;
+  font-weight: 400;
+}
+.nav .nav__navbar {
+  width: 100%;
+}
+.nav .nav__navbar .nav__menu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.nav .nav__navbar .nav__menu .nav-item {
+  color: #333333;
+  font-family: font_clearsan_medium;
+  letter-spacing: 0.3rem;
+  display: block;
+  padding: 0 4rem;
+  font-size: 1.8rem;
+  transition: all 0.3s ease;
+}
+.nav .nav__navbar .nav__menu .nav-item.nav-entry {
+  width: 16rem;
+  height: 16rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #02406e;
+  margin-left: 7rem;
+}
+.nav .nav__navbar .nav__menu .nav-item:hover {
+  opacity: 0.75;
 }
 
 /*# sourceMappingURL=common.css.map */

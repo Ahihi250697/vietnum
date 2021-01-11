@@ -1,15 +1,14 @@
 @charset "UTF-8";
 @import "../css/functions.scss";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap');
 body {
     font-family: 'Noto Sans JP', sans-serif;
-    font-size: 1.6rem;
-    color: #333333;
     font-weight: 400;
 }
 
 .warpper {
-    min-width: 1200px;
+    max-width: 100%;
+    min-width: 1600px;
     overflow: hidden;
     display: block;
 }
@@ -56,19 +55,69 @@ body>main {
     }
 }
 
-$font_clearSan:font_clearsan,
-sans-serif;
+$font_clearSan:font_clearsan_regular;
+$font_clearSan_medium:font_clearsan_medium;
+$font_clearSan_bold:font_clearsan_bold;
+figure {
+    img {
+        display: block;
+        width: 100%;
+    }
+}
+
 .nav {
     width: 100%;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1024;
     .nav__logo {
         width: 100%;
         max-width: 38.5rem;
         text-align: right;
         margin-left: 4rem;
+        img {
+            width: 100%;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
         span {
             font-size: 1.8rem;
             color: #00655a;
-            font-family: $font_clearSan;
+            font-family: $font_clearSan_medium;
+            font-weight: 400;
+        }
+    }
+    .nav__navbar {
+        width: 100%;
+        .nav__menu {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            .nav-item {
+                color: #333333;
+                font-family: $font_clearSan_medium;
+                letter-spacing: .3rem;
+                display: block;
+                padding: 0 4rem;
+                font-size: 1.8rem;
+                transition: all .3s ease;
+                &.nav-entry {
+                    width: 16rem;
+                    height: 16rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #02406e;
+                    margin-left: 7rem;
+                }
+                &:hover {
+                    opacity: .75;
+                }
+            }
         }
     }
 }
