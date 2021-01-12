@@ -294,6 +294,9 @@
     margin-right: auto;
     justify-content: space-between;
 }
+.c-nextcontents-lists a {
+    color: inherit;
+}
 .c-nextcontents-lists .c-nextcontents-list {
     max-width: 428px;
     width: calc(50% - 10px);
@@ -309,6 +312,10 @@
 }
 .recruit.cm-box {
     margin-top: 0px;
+}
+.footer-area{
+    margin-top: 0px;
+    border: none;
 }
 .warpper{
     padding-top: 160px;
