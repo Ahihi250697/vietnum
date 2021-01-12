@@ -124,10 +124,16 @@ figure img {
 @media screen and (max-width: 1024px) {
     .nav .nav__logo {
         margin-left: 2rem;
-        max-width: 50%;
+        max-width: 30rem;
     }
     .nav .nav__logo span {
         font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav .nav__logo {
+        max-width: 50%;
     }
 }
 
@@ -409,6 +415,8 @@ figure img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-bottom: 7.3rem;
+    border-bottom: 1px solid #d2d2d2;
 }
 
 .link-area .link__container a {
@@ -470,6 +478,9 @@ figure img {
 }
 
 @media screen and (max-width: 1023px) {
+    .link-area .link__container {
+        padding-bottom: 3rem;
+    }
     .link-area .link__container a {
         max-width: 100%;
         margin-top: 3rem;
@@ -481,8 +492,6 @@ figure img {
     display: flex;
     flex-wrap: wrap;
     margin-top: 7.3rem;
-    border-top: 1px solid #d2d2d2;
-    padding-top: 7.3rem;
 }
 
 .footer-area .footer__item {
@@ -508,9 +517,6 @@ figure img {
 }
 
 @media screen and (max-width: 768px) {
-    .footer-area {
-        padding-top: 5rem;
-    }
     .footer-area .footer__item {
         max-width: 50%;
         margin-top: 3rem;
