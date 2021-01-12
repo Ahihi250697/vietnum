@@ -9,3 +9,4 @@ package.json
 css/sourcemap
 css/tranning.css.map
 sass/tranning.scss
+*.scc.map
