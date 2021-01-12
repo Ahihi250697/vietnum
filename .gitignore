@@ -9,3 +9,5 @@ package.json
 css/sourcemap
 css/tranning.css.map
 sass/tranning.scss
+.sass-cache
+.gitgnore
