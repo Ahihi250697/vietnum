@@ -172,6 +172,83 @@
     }
 }
 
+.c-mainvisual {
+    background: url(../images/tranning/mainvisual.jpg) no-repeat center;
+    background-size: cover;
+    height: 603px;
+    margin-bottom: 62px;
+    position: relative;
+    z-index: 2;
+}
+
+@media only screen and (max-width: 768px) {
+    .c-mainvisual {
+        height: 360px;
+        margin-bottom: 70px;
+    }
+}
+
+.c-mainvisual__content {
+    width: 715px;
+    padding: 100px 150px 106px 192px;
+    background: #008177;
+    color: #fff;
+    bottom: -102px;
+    position: absolute;
+    left: calc(39% - 624px);
+}
+
+@media only screen and (min-width: 1601px) {
+    .c-mainvisual__content {
+        left: 0;
+        width: 44.688%;
+        padding: 100px 150px 100px calc(50% - 608px);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .c-mainvisual__content {
+        width: 90%;
+        padding: 35px 20px;
+        left: 0;
+        max-width: 375px;
+        bottom: -50px;
+    }
+}
+
+.c-mainvisual__content h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.42;
+}
+
+@media only screen and (max-width: 768px) {
+    .c-mainvisual__content h2 {
+        font-size: 2.4rem;
+    }
+}
+
+.c-mainvisual__content h2 span {
+    display: block;
+}
+
+.c-mainvisual__content h2 .txt {
+    font-size: 1.6rem;
+    color: #4fd1ed;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+    .c-mainvisual__content h2 .txt {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+    }
+}
+
 .c-topic {
     display: flex;
     align-items: center;
@@ -208,21 +285,23 @@
     color: #008177;
     font-weight: 700;
     border-left: 1px solid #7a7a7a;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 210px;
+    flex-shrink: 0;
 }
 
 @media only screen and (max-width: 769px) {
     .c-topic li {
         padding: 0 8px;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
         max-width: 120px;
-        flex-shrink: 0;
     }
 }
 
 .c-topic li:first-child {
     border-left: none;
+    min-width: 62px;
 }
 
 @media only screen and (max-width: 769px) {
@@ -233,12 +312,13 @@
 
 .c-topic li:last-child {
     margin-right: 0;
+    max-width: none;
+    flex-shrink: unset;
 }
 
 @media only screen and (max-width: 769px) {
     .c-topic li:last-child {
         max-width: none;
-        flex-shrink: unset;
     }
 }
 
@@ -246,14 +326,14 @@
     color: #333;
     font-weight: 400;
     display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 
 @media only screen and (max-width: 769px) {
     .c-topic li a {
         width: 100%;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
     }
 }
 
@@ -261,4 +341,120 @@
     opacity: 0.7;
     text-decoration: underline;
     text-underline-position: under;
+}
+
+.c-ttl01 {
+    text-align: center;
+}
+
+.c-ttl01 span {
+    display: block;
+}
+
+.c-ttl01__txt01 {
+    font-size: 2rem;
+    color: #008177;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 17px;
+    letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 768px) {
+    .c-ttl01__txt01 {
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+    }
+}
+
+.c-ttl01__txt02 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 3px;
+}
+
+@media only screen and (max-width: 768px) {
+    .c-ttl01__txt02 {
+        font-size: 2.4rem;
+        letter-spacing: 1.5px;
+    }
+}
+
+.c-ttl01--white {
+    color: #fff;
+}
+
+.c-ttl01--white .c-ttl01__txt01 {
+    color: #fff;
+}
+
+.c-nextcontens {
+    background: url(../images/tranning/bg_03.jpg) no-repeat center;
+    background-size: cover;
+    color: #fff;
+    padding: 123px 0 139px 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .c-nextcontens {
+        padding: 60px 15px 60px 15px;
+    }
+}
+
+.c-nextcontens__content {
+    width: 428px;
+    margin: 0 auto;
+    display: block;
+}
+
+@media only screen and (max-width: 768px) {
+    .c-nextcontens__content {
+        width: 100%;
+        max-width: 428px;
+    }
+}
+
+.c-nextcontens .c-ttl01 {
+    margin-bottom: 121px;
+}
+
+@media only screen and (max-width: 768px) {
+    .c-nextcontens .c-ttl01 {
+        margin-bottom: 40px;
+    }
+}
+
+.c-nextcontens figure {
+    margin-bottom: 10px;
+}
+
+.c-nextcontens figure img {
+    width: 100%;
+}
+
+.c-nextcontens p {
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    position: relative;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 768px) {
+    .c-nextcontens p {
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+}
+
+.c-nextcontens p::after {
+    content: "";
+    background: #fff;
+    width: 35px;
+    height: 1px;
+    right: -53px;
+    top: 51%;
+    position: absolute;
 }
