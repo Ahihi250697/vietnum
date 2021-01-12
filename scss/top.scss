@@ -375,31 +375,6 @@ sans-serif;
     }
 }
 
-.button-more {
-    width: 100%;
-    max-width: 23.8rem;
-    height: 5.3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-family: font_clearsan_medium;
-    letter-spacing: .1rem;
-    background: linear-gradient(90deg, rgba(0, 187, 191, 1) 11%, rgba(0, 68, 114, 1) 100%);
-    position: relative;
-    transition: all .3s ease;
-    &::after {
-        content: '';
-        width: 2.2rem;
-        height: 1px;
-        background-color: #fff;
-        margin-left: 1rem;
-    }
-    &:hover {
-        opacity: 0.75;
-    }
-}
-
 .interview {
     .decoration {
         bottom: 0;
