@@ -33,31 +33,6 @@
     font-family: font_clearsan_thin, sans-serif;
 }
 
-@font-face {
-    font-family: 'clearsans-B';
-    src: url("../assets/fonts/ClearSans-Bold.woff");
-}
-
-@font-face {
-    font-family: 'clearsans-M';
-    src: url("../assets/fonts/ClearSans-Medium.woff");
-}
-
-@font-face {
-    font-family: 'clearsans-R';
-    src: url("../assets/fonts/ClearSans-Regular.woff");
-}
-
-@font-face {
-    font-family: 'clearsans-L';
-    src: url("../assets/fonts/ClearSans-Light.woff");
-}
-
-@font-face {
-    font-family: 'clearsans-T';
-    src: url("../assets/fonts/ClearSans-Thin.woff");
-}
-
 .library-cm img {
     max-width: 100%;
     display: block;
@@ -69,10 +44,6 @@
     color: inherit;
     -webkit-transition: opacity .3s ease;
             transition: opacity .3s ease;
-}
-
-.library-cm a:hover {
-    opacity: .8;
 }
 
 .library-cm button {
@@ -121,9 +92,9 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     z-index: 1;
     width: 100%;
     padding: 0 20px 0;
@@ -131,7 +102,6 @@
 
 .people .firstView-h2 {
     max-width: 1120px;
-    margin: 0 auto;
     width: 100%;
     color: white;
 }
@@ -1147,4 +1117,50 @@
     }
 }
 
-/*# sourceMappingURL=sourcemap/people.css.map */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .people .interview-groupOne .interview-figure:nth-child(4) .interview-figure-name {
+        top: 14%;
+    }
+
+    .people .interview-groupOne .interview-figure:nth-child(4) .interview-figure-name {
+        right: -14%;
+    }
+
+    .people .interview-groupOne .interview-figure:nth-child(5) .interview-figure-name {
+        top: 0%;
+    }
+
+    .people .interview-groupOne .interview-figure:nth-child(5) .interview-figure-name {
+        right: -20%;
+    }
+
+    .people .interview-groupOne .interview-figure:nth-child(6) .interview-figure-name {
+        top: 3%;
+    }
+
+    .people .interview-groupOne .interview-figure:nth-child(6) .interview-figure-name {
+        right: -18%;
+    }
+    .people .interview-groupTwo .interview-figure:nth-child(4) .interview-figure-name {
+        top: 8%;
+    }
+
+    .people .interview-groupTwo .interview-figure:nth-child(4) .interview-figure-name {
+        right: -14%;
+    }
+
+    .people .interview-groupTwo .interview-figure:nth-child(5) .interview-figure-name {
+        top: 8%;
+    }
+
+    .people .interview-groupTwo .interview-figure:nth-child(5) .interview-figure-name {
+        right: -18%;
+    }
+    .people .interview-img img {
+        height: 100%;
+        width: auto;
+        max-width: none;
+    }
+}
+
+
