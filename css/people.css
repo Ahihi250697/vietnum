@@ -121,9 +121,9 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     z-index: 1;
     width: 100%;
     padding: 0 20px 0;
@@ -131,7 +131,6 @@
 
 .people .firstView-h2 {
     max-width: 1120px;
-    margin: 0 auto;
     width: 100%;
     color: white;
 }
@@ -1147,4 +1146,49 @@
     }
 }
 
-/*# sourceMappingURL=sourcemap/people.css.map */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .people .interview-groupOne .interview-figure:nth-child(4) .interview-figure-name {
+        top: 14%;
+    }
+
+    .people .interview-groupOne .interview-figure:nth-child(4) .interview-figure-name {
+        right: -14%;
+    }
+
+    .people .interview-groupOne .interview-figure:nth-child(5) .interview-figure-name {
+        top: 0%;
+    }
+
+    .people .interview-groupOne .interview-figure:nth-child(5) .interview-figure-name {
+        right: -20%;
+    }
+
+    .people .interview-groupOne .interview-figure:nth-child(6) .interview-figure-name {
+        top: 3%;
+    }
+
+    .people .interview-groupOne .interview-figure:nth-child(6) .interview-figure-name {
+        right: -18%;
+    }
+    .people .interview-groupTwo .interview-figure:nth-child(4) .interview-figure-name {
+        top: 8%;
+    }
+
+    .people .interview-groupTwo .interview-figure:nth-child(4) .interview-figure-name {
+        right: -14%;
+    }
+
+    .people .interview-groupTwo .interview-figure:nth-child(5) .interview-figure-name {
+        top: 8%;
+    }
+
+    .people .interview-groupTwo .interview-figure:nth-child(5) .interview-figure-name {
+        right: -18%;
+    }
+    .people .interview-img img {
+        height: 100%;
+        width: auto;
+        max-width: none;
+    }
+}
+

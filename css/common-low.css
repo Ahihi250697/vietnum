@@ -266,6 +266,7 @@
     letter-spacing: 2.5px;
     position: relative;
     display: inline-block;
+    line-height: 1.6;
 }
 
 @media only screen and (max-width: 768px) {
@@ -295,6 +296,9 @@
 .c-nextcontents-lists a {
     color: inherit;
 }
+.c-nextcontents-lists img {
+    max-width: 100%;
+}
 .c-nextcontents-lists .c-nextcontents-list {
     max-width: 428px;
     width: calc(50% - 10px);
@@ -310,10 +314,6 @@
 }
 .recruit.cm-box {
     margin-top: 0px;
-}
-.footer-area{
-    margin-top: 0px;
-    border: none;
 }
 .warpper{
     padding-top: 160px;
