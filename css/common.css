@@ -63,10 +63,6 @@ li {
     }
 }
 
-a:hover{
-    opacity: 0.8;
-}
-
 body>main {
     -ms-overflow-x: hidden;
 }
@@ -110,6 +106,12 @@ figure img {
     max-width: 38.5rem;
     text-align: right;
     margin-left: 4rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav .nav__logo:hover {
+    opacity: 0.75;
 }
 
 .nav .nav__logo img {
@@ -173,6 +175,7 @@ figure img {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #fff;
     background-color: #02406e;
     margin-left: 7rem;
 }
@@ -323,6 +326,11 @@ figure img {
     display: flex;
     align-items: center;
     position: relative;
+    transition: all 0.3s ease;
+}
+
+.recruit .recruit__wrap:hover {
+    opacity: 0.75;
 }
 
 .recruit .recruit__wrap h2 {
@@ -518,6 +526,11 @@ figure img {
 .footer-area .footer__item ul li a {
     display: block;
     color: #333;
+    transition: all 0.3s ease;
+}
+
+.footer-area .footer__item ul li a:hover {
+    opacity: 0.8;
 }
 
 @media screen and (max-width: 768px) {

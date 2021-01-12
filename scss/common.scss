@@ -107,6 +107,11 @@ figure {
         max-width: 38.5rem;
         text-align: right;
         margin-left: 4rem;
+        cursor: pointer;
+        transition: all .3s ease;
+        &:hover {
+            opacity: .75;
+        }
         img {
             width: 100%;
             display: block;
@@ -154,6 +159,7 @@ figure {
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    color: #fff;
                     background-color: #02406e;
                     margin-left: 7rem;
                 }
@@ -294,6 +300,10 @@ figure {
         display: flex;
         align-items: center;
         position: relative;
+        transition: all .3s ease;
+        &:hover {
+            opacity: .75;
+        }
         h2 {
             font-size: 2rem;
             color: #fff;
@@ -465,6 +475,10 @@ figure {
                 a {
                     display: block;
                     color: #333;
+                    transition: all .3s ease;
+                    &:hover {
+                        opacity: .8;
+                    }
                 }
             }
         }
