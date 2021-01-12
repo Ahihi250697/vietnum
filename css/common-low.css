@@ -111,6 +111,21 @@
     max-width: calc(50% + 530px);
     width: calc(100% - 210px);
 }
+.firstView-textSink {
+    font-size: 37rem;
+}
+
+.firstView-h2 .text-nihon {
+    font-size: 3.5rem;
+}
+
+.firstView-h2 .text-en {
+    font-family: 'clearsans-M', sans-serif;
+}
+
+.firstView-textSink {
+    font-family: 'clearsans-T', sans-serif;
+}
 
 @media screen and (max-width: 768px) {
     .firstView-textSink {
@@ -118,16 +133,6 @@
     }
     .firstView-h2 .text-nihon, .people .interview-h3 .text-nihon {
         font-size: 2rem;
-    }
-    .people .questionnaire-question-title {
-        font-size: 2rem;
-    }
-    .people .interview-h3 .text-en,
-    .people .questionnaire-answer-person .person-name {
-        font-size: 1.6rem;
-    }
-    .people .interview-infor-content {
-        font-size: 1.4rem;
     }
     .firstView {
         display: block;
