@@ -307,7 +307,12 @@
     margin-top: 20px;
 }
 .c-nextcontents-lists .c-nextcontents-list p::after {
-    top: 27%;
+    top: auto;
+    bottom: auto;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 5px;
+    right: -20px;
 }
 .c-nextcontents-lists .c-nextcontents-list:last-of-type{
     transform: translate3d(0, -20%, 0);

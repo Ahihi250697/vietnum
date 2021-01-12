@@ -33,31 +33,6 @@
     font-family: font_clearsan_thin, sans-serif;
 }
 
-@font-face {
-    font-family: 'clearsans-B';
-    src: url("../assets/fonts/ClearSans-Bold.woff");
-}
-
-@font-face {
-    font-family: 'clearsans-M';
-    src: url("../assets/fonts/ClearSans-Medium.woff");
-}
-
-@font-face {
-    font-family: 'clearsans-R';
-    src: url("../assets/fonts/ClearSans-Regular.woff");
-}
-
-@font-face {
-    font-family: 'clearsans-L';
-    src: url("../assets/fonts/ClearSans-Light.woff");
-}
-
-@font-face {
-    font-family: 'clearsans-T';
-    src: url("../assets/fonts/ClearSans-Thin.woff");
-}
-
 .library-cm img {
     max-width: 100%;
     display: block;
@@ -69,10 +44,6 @@
     color: inherit;
     -webkit-transition: opacity .3s ease;
             transition: opacity .3s ease;
-}
-
-.library-cm a:hover {
-    opacity: .8;
 }
 
 .library-cm button {
@@ -1191,4 +1162,5 @@
         max-width: none;
     }
 }
+
 

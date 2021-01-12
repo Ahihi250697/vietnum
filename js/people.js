@@ -90,9 +90,12 @@
     }
   })(jQuery);
 
-  $.each($('.questionnaire-list.active'), function(){
-      $(this).children('.questionnaire-answer').css('height', $(this).children('.questionnaire-answer').children().first().outerHeight() + 'px');
+  $('img').on('load', function(){
+    $.each($('.questionnaire-list.active'), function(){
+        $(this).children('.questionnaire-answer').css('height', $(this).children('.questionnaire-answer').children().first().outerHeight() + 'px');
+    })
   })
+  
   $('.questionnaire-question-title').on('click', function(){
       if($(this).closest('.questionnaire-list').is('.active')) {
           $(this).closest('.questionnaire-list').removeClass('active');
