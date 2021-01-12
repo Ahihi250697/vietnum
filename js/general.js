@@ -14,7 +14,7 @@ function fn_add() {
 }
 
 function fn_remove() {
-    console.log('asdasd');
+
     _hamburger.removeClass('active');
     window.pageYOffset == 0 ? _nav.removeClass('active') : null;
     _nav_navbar.removeClass('active');
