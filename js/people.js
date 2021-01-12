@@ -91,7 +91,7 @@
   })(jQuery);
 
   $.each($('.questionnaire-list.active'), function(){
-      $(this).children('.questionnaire-answer').css('height', `${$(this).children('.questionnaire-answer').children().first().outerHeight()}px`);
+      $(this).children('.questionnaire-answer').css('height', $(this).children('.questionnaire-answer').children().first().outerHeight() + 'px');
   })
   $('.questionnaire-question-title').on('click', function(){
       if($(this).closest('.questionnaire-list').is('.active')) {
@@ -100,12 +100,12 @@
       }
       else {
         $(this).closest('.questionnaire-list').addClass('active');
-        $(this).parent().next().css('height', `${$(this).parent().next().children().first().outerHeight()}px`);
+        $(this).parent().next().css('height', $(this).parent().next().children().first().outerHeight() + 'px');
       }
   });
 
   window.addEventListener('resize', function(){
     $.each($('.questionnaire-list.active'), function(){
-        $(this).children('.questionnaire-answer').css('height', `${$(this).children('.questionnaire-answer').children().first().outerHeight()}px`);
+        $(this).children('.questionnaire-answer').css('height', $(this).children('.questionnaire-answer').children().first().outerHeight() + 'px');
     });
   })
