@@ -86,44 +86,6 @@
     display: block;
 }
 
-.people .breaklink {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    padding-top: 45px;
-}
-
-.people .breaklink::before {
-    content: '';
-}
-
-.people .breaklink-wrap {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    line-height: 1;
-}
-
-.people .breaklink-wrap .active {
-    color: #008177;
-    font-weight: bold;
-}
-
-.people .breaklink-wrap .line-vertical {
-    color: #d2d2d2;
-    padding: 0 15px;
-}
-
 .people .interview {
     margin-top: 120px;
     position: relative;
@@ -850,25 +812,6 @@
     }
     .people .interview-infor-content {
         font-size: 1.4rem;
-    }
-    .people .breaklink {
-        padding: 0;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-    }
-    .people .breaklink::before {
-        height: 60px;
-        min-width: 260px;
-    }
-    .people .breaklink-wrap {
-        height: 60px;
-    }
-
-    .people .breaklink-wrap a, .people .breaklink-wrap span {
-        white-space: nowrap;
-    }
-    .people .breaklink-wrap .line-vertical {
-        padding: 0 10px;
     }
     .people .interview {
         margin-top: 60px;
