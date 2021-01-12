@@ -188,6 +188,7 @@ a:hover{
     text-transform: uppercase;
     margin-bottom: 17px;
     letter-spacing: 2px;
+    font-family: font_clearsan_medium;
 }
 
 @media only screen and (max-width: 768px) {
@@ -297,19 +298,24 @@ a:hover{
     margin-right: auto;
     justify-content: space-between;
 }
+
 .c-nextcontents-lists a {
     color: inherit;
 }
+
 .c-nextcontents-lists img {
     max-width: 100%;
 }
+
 .c-nextcontents-lists .c-nextcontents-list {
     max-width: 428px;
     width: calc(50% - 10px);
 }
+
 .c-nextcontents-lists .c-nextcontents-list p {
     margin-top: 20px;
 }
+
 .c-nextcontents-lists .c-nextcontents-list p::after {
     top: auto;
     bottom: auto;
@@ -318,13 +324,16 @@ a:hover{
     margin-bottom: 5px;
     right: -20px;
 }
-.c-nextcontents-lists .c-nextcontents-list:last-of-type{
+
+.c-nextcontents-lists .c-nextcontents-list:last-of-type {
     transform: translate3d(0, -20%, 0);
 }
+
 .recruit.cm-box {
     margin-top: 0px;
 }
-.warpper{
+
+.warpper {
     padding-top: 160px;
 }
 
@@ -336,7 +345,7 @@ a:hover{
         display: block;
         max-width: 428px;
     }
-    .c-nextcontents-lists .c-nextcontents-list:last-of-type{
+    .c-nextcontents-lists .c-nextcontents-list:last-of-type {
         transform: translate3d(0, 0, 0);
         margin-top: 30px;
     }
@@ -348,7 +357,7 @@ a:hover{
         width: 20px;
         right: -15%;
     }
-    .warpper{
+    .warpper {
         padding-top: 80px;
     }
 }

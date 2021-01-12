@@ -200,7 +200,7 @@
     height: 190px;
   }
 }
-.c-chart02__percent > span {
+.c-chart02__percent > div {
   font-weight: 500;
   display: block;
   text-align: center;
@@ -365,6 +365,9 @@
     padding: 40px 15px 40px 15px;
   }
 }
+.c-chart04__item a {
+  display: block;
+}
 .c-chart04__item figure {
   margin: 25px 0 0 40px;
 }
@@ -443,9 +446,13 @@
     background: #fff;
   }
 }
-.c-chart04__item--1 figure {
+.c-chart04__item--1 a {
   width: 288px;
   margin: 0 auto;
+  transition: 0.5s;
+}
+.c-chart04__item--1 a img {
+  transition: 0.5s;
 }
 .c-chart04__item--1 h4 {
   margin-bottom: 13px;
