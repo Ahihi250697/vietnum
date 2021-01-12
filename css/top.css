@@ -320,6 +320,12 @@
     display: flex;
     padding: 3.5rem 0;
     line-height: 1.4;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.article .article__container:hover {
+    opacity: 0.75;
 }
 
 .article .article__date {
@@ -506,6 +512,11 @@
 .interview .interview__list .item {
     width: 100%;
     max-width: calc(25% - 40px);
+    transition: all 0.3s ease;
+}
+
+.interview .interview__list .item:hover {
+    opacity: 0.8;
 }
 
 .interview .interview__list .item figure {
@@ -552,6 +563,11 @@
     background-color: #004070;
     justify-content: flex-end;
     margin-top: 8rem;
+    transition: all 0.3s ease;
+}
+
+.interview .interview__box:hover {
+    opacity: 0.8;
 }
 
 .interview .interview__box .title {
