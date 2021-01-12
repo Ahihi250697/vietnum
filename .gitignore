@@ -9,4 +9,9 @@ package.json
 css/sourcemap
 css/tranning.css.map
 sass/tranning.scss
+<<<<<<< HEAD
 *.scc.map
+=======
+.sass-cache
+.gitgnore
+>>>>>>> d2e2329534ad415a2e68497463ebf2c4aa86ba8f
