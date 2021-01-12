@@ -266,6 +266,7 @@
     letter-spacing: 2.5px;
     position: relative;
     display: inline-block;
+    line-height: 1.6;
 }
 
 @media only screen and (max-width: 768px) {
@@ -313,10 +314,6 @@
 }
 .recruit.cm-box {
     margin-top: 0px;
-}
-.footer-area{
-    margin-top: 0px;
-    border: none;
 }
 .warpper{
     padding-top: 160px;

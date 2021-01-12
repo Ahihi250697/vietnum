@@ -51,6 +51,9 @@
 .c-topic-interview{
 	top: -80px;
 }
+.c-nextcontens.c-nextcontens--interview p{
+	font-size: 2rem !important;
+}
 .interview{
 	padding-top: 270px;
 	transform: translateY(-170px);
@@ -143,11 +146,11 @@
 		align-items: stretch;
 		&--one-child .question__list__child{
 			max-width: 100%;
-			min-height: unset;
-			h3{
+			min-height: auto;
+			p.title{
 				text-align: center;
 			}
-			h4{
+			h3{
 				text-align: center;
 			}
 		}

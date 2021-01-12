@@ -1,365 +1,279 @@
 .interview-mv {
   position: relative;
   z-index: 1;
-  padding-bottom: 170px;
-}
-
-.interview-mv__bg {
-  max-width: calc(50% + 365px);
-  width: 100%;
-  margin-right: 0;
-  margin-left: auto;
-}
-
-.interview-mv__dummy {
-  max-width: calc(50% + 110px);
-  width: 100%;
-  position: absolute;
-  z-index: -2;
-  bottom: 65px;
-  left: 0;
-}
-
-.interview-mv__content {
-  position: absolute;
-  z-index: 1;
-  background: linear-gradient(47deg, #034f83 0%, #00978d 100%);
-  max-width: 625px;
-  width: 100%;
-  left: 100px;
-  bottom: 0;
-  padding: 140px 0 140px 135px;
-}
-
-.interview-mv__content h2 {
-  font-family: "Noto Sans JP", sans-serif;
-}
-
-.interview-mv__content h2 span {
-  display: block;
-  line-height: 1.5;
-  color: #fff;
-  font-weight: 400;
-}
-
-.interview-mv__content h2 span.txt {
-  font-family: font_clearsan_medium;
-  letter-spacing: 3px;
-  color: #4fd1ed;
-  font-size: 1.6rem;
-  line-height: 2;
-}
+  padding-bottom: 170px; }
+  .interview-mv__bg {
+    max-width: calc(50% + 365px);
+    width: 100%;
+    margin-right: 0;
+    margin-left: auto; }
+  .interview-mv__dummy {
+    max-width: calc(50% + 110px);
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+    bottom: 65px;
+    left: 0; }
+  .interview-mv__content {
+    position: absolute;
+    z-index: 1;
+    background: linear-gradient(47deg, #034f83 0%, #00978d 100%);
+    max-width: 625px;
+    width: 100%;
+    left: 100px;
+    bottom: 0;
+    padding: 140px 0 140px 135px; }
+    .interview-mv__content h2 {
+      font-family: "Noto Sans JP", sans-serif; }
+      .interview-mv__content h2 span {
+        display: block;
+        line-height: 1.5;
+        color: #fff;
+        font-weight: 400; }
+        .interview-mv__content h2 span.txt {
+          font-family: font_clearsan_medium;
+          letter-spacing: 3px;
+          color: #4fd1ed;
+          font-size: 1.6rem;
+          line-height: 2; }
 
 .c-topic-interview {
-  top: -80px;
-}
+  top: -80px; }
+
+.c-nextcontens.c-nextcontens--interview p {
+  font-size: 2rem !important; }
 
 .interview {
   padding-top: 270px;
   transform: translateY(-170px);
   position: relative;
-  z-index: 0;
-}
-
-.interview figure.decord {
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
-.interview h2 {
-  font-family: "Noto Sans JP", sans-serif;
-  font-weight: 500;
-  font-size: 3.5rem;
-  color: #333;
-  text-align: center;
-  line-height: 1.5;
-}
-
-.interview h2 span {
-  font-family: font_clearsan_medium;
-  font-size: 2rem;
-  letter-spacing: 3px;
-  color: #008177;
-  text-align: center;
-  display: block;
-  margin-bottom: 30px;
-}
-
-.interview__profile {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-top: 1px solid #d6d6d6;
-  border-bottom: 1px solid #d6d6d6;
-  padding: 95px 0;
-  margin-top: 110px;
-}
-
-.interview__profile figure {
-  max-width: calc(50% - 270px);
-  width: 100%;
-  position: relative;
-  z-index: 0;
-  border-radius: 50%;
-}
-
-.interview__profile figure img {
-  max-width: 225px;
-}
-
-.interview__profile figure::before {
-  content: '';
-  position: absolute;
-  z-index: 0;
-  top: 50%;
-  right: -5px;
-  width: 3px;
-  height: 30px;
-  background-color: #187f77;
-  transform: translateY(-50%) rotate(27deg);
-}
-
-.interview__profile__content {
-  max-width: calc(50% + 270px);
-  width: 100%;
-  padding-left: 70px;
-}
-
-.interview__profile__content p {
-  line-height: 1.5;
-}
-
-.interview__profile__content h3 {
-  font-family: font_clearsan_medium;
-  letter-spacing: 3px;
-  font-weight: 500;
-  color: #187f77;
-  margin-bottom: 20px;
-}
+  z-index: 0; }
+  .interview figure.decord {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%; }
+  .interview h2 {
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: 500;
+    font-size: 3.5rem;
+    color: #333;
+    text-align: center;
+    line-height: 1.5; }
+    .interview h2 span {
+      font-family: font_clearsan_medium;
+      font-size: 2rem;
+      letter-spacing: 3px;
+      color: #008177;
+      text-align: center;
+      display: block;
+      margin-bottom: 30px; }
+  .interview__profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #d6d6d6;
+    border-bottom: 1px solid #d6d6d6;
+    padding: 95px 0;
+    margin-top: 110px; }
+    .interview__profile figure {
+      max-width: calc(50% - 270px);
+      width: 100%;
+      position: relative;
+      z-index: 0;
+      border-radius: 50%; }
+      .interview__profile figure img {
+        max-width: 225px; }
+      .interview__profile figure::before {
+        content: '';
+        position: absolute;
+        z-index: 0;
+        top: 50%;
+        right: -5px;
+        width: 3px;
+        height: 30px;
+        background-color: #187f77;
+        transform: translateY(-50%) rotate(27deg); }
+    .interview__profile__content {
+      max-width: calc(50% + 270px);
+      width: 100%;
+      padding-left: 70px; }
+      .interview__profile__content p {
+        line-height: 1.5; }
+      .interview__profile__content h3 {
+        font-family: font_clearsan_medium;
+        letter-spacing: 3px;
+        font-weight: 500;
+        color: #187f77;
+        margin-bottom: 20px; }
 
 .question.fix-blank {
-  transform: translateY(-85px);
-}
-
-.question.fix-blank .question__list .question__list__child {
-  margin-bottom: 0;
-  min-height: unset;
-}
-
+  transform: translateY(-85px); }
+  .question.fix-blank .question__list .question__list__child {
+    margin-bottom: 0;
+    min-height: unset; }
 .question figure.question__img {
-  margin-bottom: 140px;
-}
-
+  margin-bottom: 140px; }
 .question__list {
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
-}
-
-.question__list--one-child .question__list__child {
-  max-width: 100%;
-  min-height: unset;
-}
-
-.question__list--one-child .question__list__child h3 {
-  text-align: center;
-}
-
-.question__list--one-child .question__list__child h4 {
-  text-align: center;
-}
-
-.question__list__child {
-  max-width: calc(50% - 120px);
-  width: 100%;
-  min-height: 500px;
-  margin-bottom: 110px;
-}
-
-.question__list__child p.title {
-  font-family: font_clearsan_medium;
-  letter-spacing: 2px;
-  font-size: 2rem;
-  font-weight: 500;
-  color: #008177;
-  margin-bottom: 30px;
-}
-
-.question__list__child h3 {
-  font-family: "Noto Sans JP", sans-serif;
-  font-weight: 500;
-  font-size: 2.8rem;
-  color: #333;
-  line-height: 1.5;
-  margin-bottom: 45px;
-}
-
-.question__list__child p {
-  line-height: 1.5;
-  font-weight: 400;
-  font-size: 1.6rem;
-  color: #333;
-}
+  align-items: stretch; }
+  .question__list--one-child .question__list__child {
+    max-width: 100%;
+    min-height: auto; }
+    .question__list--one-child .question__list__child p.title {
+      text-align: center; }
+    .question__list--one-child .question__list__child h3 {
+      text-align: center; }
+  .question__list__child {
+    max-width: calc(50% - 120px);
+    width: 100%;
+    min-height: 500px;
+    margin-bottom: 110px; }
+    .question__list__child p.title {
+      font-family: font_clearsan_medium;
+      letter-spacing: 2px;
+      font-size: 2rem;
+      font-weight: 500;
+      color: #008177;
+      margin-bottom: 30px; }
+    .question__list__child h3 {
+      font-family: "Noto Sans JP", sans-serif;
+      font-weight: 500;
+      font-size: 2.8rem;
+      color: #333;
+      line-height: 1.5;
+      margin-bottom: 45px; }
+    .question__list__child p {
+      line-height: 1.5;
+      font-weight: 400;
+      font-size: 1.6rem;
+      color: #333; }
 
 .message {
   position: relative;
   z-index: 0;
   padding-bottom: 150px;
-  margin-bottom: 150px;
-}
-
-.message figure.message__img {
-  margin-right: 0;
-  margin-left: auto;
-  max-width: calc(50% + 50px);
-  width: 100%;
-}
-
-.message::before {
-  content: '';
-  position: absolute;
-  z-index: 1;
-  left: 0;
-  bottom: 0;
-  max-width: calc(50% + 80px);
-  width: 100%;
-  height: calc(100% - 150px);
-  background-color: #02406e;
-  opacity: 0.9;
-}
-
-.message__content {
-  max-width: 1020px;
-  width: 100%;
-  background-color: #fff;
-  position: absolute;
-  z-index: 2;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -10%);
-  padding: 90px 135px;
-}
-
-.message__content h3 {
-  text-align: center;
-  font-weight: 500;
-  font-size: 3rem;
-  color: #008177;
-  margin-bottom: 60px;
-}
-
-.message__content p {
-  line-height: 1.5;
-  font-weight: 400;
-  color: #333;
-  font-size: 1.6rem;
-}
+  margin-bottom: 150px; }
+  .message figure.message__img {
+    margin-right: 0;
+    margin-left: auto;
+    max-width: calc(50% + 50px);
+    width: 100%; }
+  .message::before {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    bottom: 0;
+    max-width: calc(50% + 80px);
+    width: 100%;
+    height: calc(100% - 150px);
+    background-color: #02406e;
+    opacity: 0.9; }
+  .message__content {
+    max-width: 1020px;
+    width: 100%;
+    background-color: #fff;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    padding: 90px 135px; }
+    .message__content h3 {
+      text-align: center;
+      font-weight: 500;
+      font-size: 3rem;
+      color: #008177;
+      margin-bottom: 60px; }
+    .message__content p {
+      line-height: 1.5;
+      font-weight: 400;
+      color: #333;
+      font-size: 1.6rem; }
 
 @media screen and (max-width: 1023px) {
   .interview-mv__bg {
-    max-width: 100%;
-  }
+    max-width: 100%; }
   .interview-mv__dummy {
-    display: none;
-  }
+    display: none; }
   .interview-mv__content {
     max-width: calc(50% - 10px);
     width: 100%;
     left: 50px;
     bottom: 90px;
-    padding: 50px 35px;
-  }
+    padding: 50px 35px; }
+
   .interview {
-    padding-top: 130px;
-  }
-  .interview h2 {
-    font-size: 2rem;
-  }
-  .interview h2 span {
-    margin-bottom: 10px;
-    font-size: 1.6rem;
-  }
-  .interview__profile {
-    flex-flow: column nowrap;
-  }
-  .interview__profile figure {
-    max-width: 100%;
-  }
-  .interview__profile__content {
-    max-width: 100%;
-    padding-left: 0;
-    margin-top: 20px;
-  }
-  .interview__profile__content h3 {
-    font-size: 1.6rem;
-  }
+    padding-top: 130px; }
+    .interview h2 {
+      font-size: 2rem; }
+      .interview h2 span {
+        margin-bottom: 10px;
+        font-size: 1.6rem; }
+    .interview__profile {
+      flex-flow: column nowrap; }
+      .interview__profile figure {
+        max-width: 100%; }
+      .interview__profile__content {
+        max-width: 100%;
+        padding-left: 0;
+        margin-top: 20px; }
+        .interview__profile__content h3 {
+          font-size: 1.6rem; }
+
   .question__list__child {
-    max-width: calc(50% - 30px);
-  }
-  .question__list__child h3 {
-    font-size: 2rem;
-  }
+    max-width: calc(50% - 30px); }
+    .question__list__child h3 {
+      font-size: 2rem; }
+
   .message::before {
-    height: calc(100% - 90px);
-  }
+    height: calc(100% - 90px); }
   .message__content {
     max-width: calc(100% - 120px);
     transform: translate(-50%, -35%);
-    padding: 50px 40px;
-  }
-  .message__content h3 {
-    margin-bottom: 20px;
-  }
-}
-
+    padding: 50px 40px; }
+    .message__content h3 {
+      margin-bottom: 20px; } }
 @media screen and (max-width: 767px) {
   .interview-mv__content {
     max-width: 100%;
-    position: static;
-  }
+    position: static; }
+
   .interview__profile {
     margin-top: 70px;
-    padding: 50px 0;
-  }
+    padding: 50px 0; }
+
   .question.fix-blank .question__list .question__list__child:first-of-type {
-    margin-bottom: 70px;
-  }
+    margin-bottom: 70px; }
   .question figure.question__img {
-    margin-bottom: 50px;
-  }
+    margin-bottom: 50px; }
   .question__list {
-    flex-flow: column nowrap;
-  }
-  .question__list__child {
-    max-width: 100%;
-    min-height: unset;
-    margin-bottom: 70px;
-  }
+    flex-flow: column nowrap; }
+    .question__list__child {
+      max-width: 100%;
+      min-height: unset;
+      margin-bottom: 70px; }
+
   .message {
     padding-bottom: 0;
-    margin-bottom: 70px;
-  }
-  .message::before {
-    display: none;
-  }
-  .message figure.message__img {
-    max-width: 100%;
-  }
-  .message__content {
-    position: static;
-    top: unset;
-    left: 0;
-    transform: unset;
-    padding: 30px;
-    max-width: 100%;
-  }
-  .message__content h3 {
-    font-size: 2rem;
-  }
-  .message__content p {
-    font-size: 1.4rem;
-  }
-}
+    margin-bottom: 70px; }
+    .message::before {
+      display: none; }
+    .message figure.message__img {
+      max-width: 100%; }
+    .message__content {
+      position: static;
+      top: unset;
+      left: 0;
+      transform: unset;
+      padding: 30px;
+      max-width: 100%; }
+      .message__content h3 {
+        font-size: 2rem; }
+      .message__content p {
+        font-size: 1.4rem; } }
+
+/*# sourceMappingURL=interview.css.map */
