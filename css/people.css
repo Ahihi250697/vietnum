@@ -1,4 +1,8 @@
-.people .interview-h3 .text-nihon {
+.people .firstView-textSink {
+    font-size: 37rem;
+}
+
+.people .firstView-h2 .text-nihon, .people .interview-h3 .text-nihon {
     font-size: 3.5rem;
 }
 
@@ -19,10 +23,14 @@
     font-size: 1.2rem;
 }
 
-.people .interview-h3 .text-en, .people .interview-figure-name,
-.people .interview-infor-name .infor-name,
+.people .firstView-h2 .text-en, .people .interview-h3 .text-en,
+.people .interview-figure-name, .people .interview-infor-name .infor-name,
 .people .questionnaire-answer-person .person-name {
-    font-family: 'clearsans-M', sans-serif;
+    font-family: font_clearsan_medium, sans-serif;
+}
+
+.people .firstView-textSink {
+    font-family: font_clearsan_thin, sans-serif;
 }
 
 @font-face {
@@ -84,6 +92,160 @@
 
 .library-cm .d-block {
     display: block;
+}
+
+.people .firstView {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 0;
+}
+
+.people .firstView-img {
+    max-width: calc(50% + 470px);
+    width: 100%;
+}
+
+.people .firstView-img img {
+    width: 100%;
+}
+
+.people .firstView-title {
+    position: absolute;
+    left: 0;
+    bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    z-index: 1;
+    width: 100%;
+    padding: 0 20px 0;
+}
+
+.people .firstView-h2 {
+    max-width: 1120px;
+    margin: 0 auto;
+    width: 100%;
+    color: white;
+}
+
+.people .firstView-h2 span {
+    display: block;
+}
+
+.people .firstView-h2 .text-en {
+    font-weight: normal;
+    color: #4fd1ed;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: .3rem;
+}
+
+.people .firstView-h2 .text-nihon {
+    line-height: 1.4;
+    margin-top: 20px;
+    letter-spacing: .2rem;
+}
+
+.people .firstView-box {
+    max-width: calc(50% - 80px);
+    position: absolute;
+    width: 100%;
+    max-height: 395px;
+    height: 25vw;
+    min-height: 280px;
+    background-color: #008177;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    z-index: -1;
+}
+
+.people .firstView-textSink {
+    position: absolute;
+    top: calc(100% - 45px);
+    left: 0;
+    z-index: -2;
+    line-height: .8;
+    color: #004070;
+    width: 100%;
+    opacity: .05;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    font-size: clamp(31rem, 23vw, 37rem);
+}
+
+.people .firstView-textSink span {
+    display: block;
+    white-space: nowrap;
+    width: 100%;
+    letter-spacing: 1.5rem;
+}
+
+.people .firstView-textSink span:first-of-type {
+    max-width: calc(50% + 800px);
+    text-indent: -70px;
+}
+
+.people .firstView-textSink span:last-of-type {
+    max-width: calc(50% + 530px);
+    width: calc(100% - 210px);
+}
+
+.people .breaklink {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-top: 45px;
+    margin: 0 auto;
+    max-width: 1120px;
+}
+
+.people .breaklink::before {
+    content: '';
+}
+
+.people .breaklink-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    line-height: 1;
+}
+
+.people .breaklink-wrap .active {
+    color: #008177;
+    font-weight: bold;
+}
+
+.people .breaklink-wrap .line-vertical {
+    color: #d2d2d2;
+    padding: 0 15px;
 }
 
 .people .interview {
@@ -606,7 +768,7 @@
 
 .people .questionnaire {
     letter-spacing: .1rem;
-    margin: 80px 0 100px;
+    margin: 80px 0 0;
 }
 
 .people .questionnaire .person-name.color1 {
@@ -800,7 +962,10 @@
 }
 
 @media screen and (max-width: 768px) {
-    .people .interview-h3 .text-nihon {
+    .people .firstView-textSink {
+        font-size: 18rem;
+    }
+    .people .firstView-h2 .text-nihon, .people .interview-h3 .text-nihon {
         font-size: 2rem;
     }
     .people .questionnaire-question-title {
@@ -812,6 +977,59 @@
     }
     .people .interview-infor-content {
         font-size: 1.4rem;
+    }
+    .people .firstView {
+        display: block;
+    }
+    .people .firstView-title {
+        bottom: 0;
+        padding: 20px;
+        -webkit-transform: translateY(60px);
+                transform: translateY(60px);
+        height: 25vw;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        max-width: calc(50% - 80px);
+        min-width: 260px;
+        min-height: 120px;
+    }
+    .people .firstView-h2 .text-nihon {
+        margin-top: 10px;
+    }
+    .people .firstView-box {
+        min-height: 0;
+        max-width: 100%;
+        height: 100%;
+    }
+    .people .firstView-textSink {
+        top: calc(100% - 3vw);
+    }
+    .people .firstView-textSink span:first-of-type {
+        text-indent: -20px;
+    }
+    .people .firstView-textSink span:last-of-type {
+        max-width: calc(100% - 14vw);
+        width: 100%;
+    }
+    .people .breaklink {
+        padding: 0;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+    .people .breaklink::before {
+        height: 60px;
+        min-width: 260px;
+    }
+    .people .breaklink-wrap {
+        height: 60px;
+    }
+
+    .people .breaklink-wrap a, .people .breaklink-wrap span {
+        white-space: nowrap;
+    }
+    .people .breaklink-wrap .line-vertical {
+        padding: 0 10px;
     }
     .people .interview {
         margin-top: 60px;
@@ -890,7 +1108,7 @@
         margin-right: 10px;
     }
     .people .questionnaire {
-        margin: 50px 0 50px;
+        margin: 50px 0 0;
     }
     .people .questionnaire-question-title {
         padding: 20px 0;
