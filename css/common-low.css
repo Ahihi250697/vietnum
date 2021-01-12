@@ -295,6 +295,9 @@
 .c-nextcontents-lists a {
     color: inherit;
 }
+.c-nextcontents-lists img {
+    max-width: 100%;
+}
 .c-nextcontents-lists .c-nextcontents-list {
     max-width: 428px;
     width: calc(50% - 10px);
