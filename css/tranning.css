@@ -405,6 +405,9 @@
     justify-content: center;
   }
 }
+.c-chart04__item p label {
+  cursor: default;
+}
 .c-chart04__item p .txt01 {
   font-size: 6rem;
   font-family: "Noto Sans JP", sans-serif;
@@ -516,6 +519,8 @@
     width: 68px;
     margin-left: 20px;
     margin-right: 0;
+    position: relative;
+    top: -6px;
   }
 }
 .c-chart04__item--4 h4 {
@@ -549,11 +554,23 @@
     font-size: 1.8rem;
     letter-spacing: 1px;
     padding-top: 0px;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
   }
 }
 .c-chart05__content {
   text-align: center;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  max-width: 810px;
+  align-items: center;
+  padding-left: 68px;
+}
+@media only screen and (max-width: 768px) {
+  .c-chart05__content {
+    justify-content: center;
+    padding-left: 0;
+  }
 }
 .c-chart05__content .percent {
   display: inline-block;
@@ -562,10 +579,12 @@
   font-family: font_clearsan;
   opacity: 0.8;
   line-height: 1;
+  width: 600px;
 }
 @media only screen and (max-width: 768px) {
   .c-chart05__content .percent {
     font-size: 8rem;
+    width: 206px;
   }
 }
 .c-chart05__content .percent span {
@@ -586,22 +605,22 @@
   display: inline-block;
   width: 128px;
   position: relative;
-  margin-right: 75px;
   top: 8px;
 }
 @media only screen and (max-width: 768px) {
   .c-chart05__content figure {
     width: 70px;
-    margin-right: 10px;
+    top: -8px;
   }
 }
-.c-chart05__content .txt {
+.c-chart05 .txt {
   margin-top: 61px;
   letter-spacing: 2px;
   line-height: 2.15;
+  text-align: center;
 }
 @media only screen and (max-width: 768px) {
-  .c-chart05__content .txt {
+  .c-chart05 .txt {
     margin-top: 30px;
     letter-spacing: 1px;
     line-height: 1.8;
