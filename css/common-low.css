@@ -335,11 +335,6 @@ a:hover {
     margin-top: 0px;
 }
 
-.main {
-    padding-top: 160px;
-    overflow: hidden;
-}
-
 @media only screen and (max-width: 768px) {
     .c-nextcontents-lists .c-nextcontents-list {
         width: 100%;
@@ -359,8 +354,5 @@ a:hover {
     .c-nextcontents-lists .c-nextcontents-list p::after {
         width: 20px;
         right: -15%;
-    }
-    .main {
-        padding-top: 80px;
     }
 }
