@@ -26,6 +26,22 @@ body {
     font-weight: 400;
 }
 
+.main {
+    margin-top: 16rem;
+    &.main-top {
+        margin-top: 0;
+    }
+    @include near_screen1600 {
+        margin-top: 10rem;
+    }
+    @include ipadpro {
+        margin-top: 8rem;
+        &.main-top {
+            margin-top: 8rem;
+        }
+    }
+}
+
 .warpper {
     max-width: 100%;
     min-width: 1200px;
@@ -66,7 +82,7 @@ li {
 }
 
 body>main {
-    -ms-overflow-x: hidden;
+    overflow: hidden;
 }
 
 @supports (-ms-ime-align: auto) {
@@ -123,6 +139,9 @@ figure {
             font-family: $font_clearSan_medium;
             font-weight: 400;
         }
+        @include near_screen1600 {
+            max-width: 20vw;
+        }
         @include ipadpro {
             margin-left: 2rem;
             max-width: 30rem;
@@ -165,6 +184,20 @@ figure {
                 }
                 &:hover {
                     opacity: .75;
+                }
+            }
+        }
+        @include near_screen1600 {
+            .nav__menu {
+                .nav-item {
+                    letter-spacing: .2rem;
+                    padding: 0 2rem;
+                    font-size: 1.6rem;
+                    &.nav-entry {
+                        width: 10rem;
+                        height: 10rem;
+                        margin-left: 4rem;
+                    }
                 }
             }
         }
@@ -259,10 +292,12 @@ figure {
             font-size: 2rem;
             display: block;
             margin-bottom: 1.5rem;
+            letter-spacing: 0.2rem;
         }
         font-size: 3.5rem;
         color: #333;
         font-weight: 500;
+        letter-spacing: 0.3rem;
     }
     .cm-box__container {
         width: 100%;
@@ -341,6 +376,7 @@ figure {
             flex-direction: column;
             justify-content: center;
             h2 {
+                text-align: center;
                 font-size: 2rem;
                 span {
                     font-size: 3rem;
@@ -351,6 +387,12 @@ figure {
                 top: 0;
                 transform: translateY(0%);
                 margin-top: 3rem;
+                &::after {
+                    position: absolute;
+                    right: 20px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
             }
         }
     }
@@ -458,7 +500,7 @@ figure {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 7.3rem;
+    margin-top: 9rem;
     .footer__item {
         width: 100%;
         max-width: 25%;
@@ -468,10 +510,11 @@ figure {
             font-family: font_clearsan_medium;
         }
         ul {
-            margin-top: 3.5rem;
+            margin-top: 2rem;
             display: flex;
             flex-direction: column;
             li {
+                line-height: 2;
                 a {
                     display: block;
                     color: #333;

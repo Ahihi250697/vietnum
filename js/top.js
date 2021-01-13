@@ -14,5 +14,4 @@ $('.mv__slider').slick({
             centerPadding: '0%',
         }
     }]
-
 });

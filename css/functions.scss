@@ -34,6 +34,12 @@
     }
 }
 
+@mixin near_screen1600 {
+    @media screen and (max-width: 1599px) {
+        @content;
+    }
+}
+
 @mixin screen640 {
     @media screen and (max-width: 640px) {
         @content;

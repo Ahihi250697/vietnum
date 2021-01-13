@@ -24,6 +24,29 @@ body {
     font-weight: 400;
 }
 
+.main {
+    margin-top: 16rem;
+}
+
+.main.main-top {
+    margin-top: 0;
+}
+
+@media screen and (max-width: 1599px) {
+    .main {
+        margin-top: 10rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .main {
+        margin-top: 8rem;
+    }
+    .main.main-top {
+        margin-top: 8rem;
+    }
+}
+
 .warpper {
     max-width: 100%;
     min-width: 1200px;
@@ -64,7 +87,7 @@ li {
 }
 
 body>main {
-    -ms-overflow-x: hidden;
+    overflow: hidden;
 }
 
 @supports (-ms-ime-align: auto) {
@@ -127,6 +150,12 @@ figure img {
     font-weight: 400;
 }
 
+@media screen and (max-width: 1599px) {
+    .nav .nav__logo {
+        max-width: 20vw;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     .nav .nav__logo {
         margin-left: 2rem;
@@ -182,6 +211,19 @@ figure img {
 
 .nav .nav__navbar .nav__menu .nav-item:hover {
     opacity: 0.75;
+}
+
+@media screen and (max-width: 1599px) {
+    .nav .nav__navbar .nav__menu .nav-item {
+        letter-spacing: 0.2rem;
+        padding: 0 2rem;
+        font-size: 1.6rem;
+    }
+    .nav .nav__navbar .nav__menu .nav-item.nav-entry {
+        width: 10rem;
+        height: 10rem;
+        margin-left: 4rem;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -277,6 +319,7 @@ figure img {
     font-size: 3.5rem;
     color: #333;
     font-weight: 500;
+    letter-spacing: 0.3rem;
 }
 
 .cm-box .cm-title span {
@@ -285,6 +328,7 @@ figure img {
     font-size: 2rem;
     display: block;
     margin-bottom: 1.5rem;
+    letter-spacing: 0.2rem;
 }
 
 .cm-box .cm-box__container {
@@ -377,6 +421,7 @@ figure img {
         justify-content: center;
     }
     .recruit .recruit__wrap h2 {
+        text-align: center;
         font-size: 2rem;
     }
     .recruit .recruit__wrap h2 span {
@@ -387,6 +432,12 @@ figure img {
         top: 0;
         transform: translateY(0%);
         margin-top: 3rem;
+    }
+    .recruit .recruit__wrap .button-more::after {
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
     }
 }
 
@@ -503,7 +554,7 @@ figure img {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 7.3rem;
+    margin-top: 9rem;
 }
 
 .footer-area .footer__item {
@@ -518,9 +569,13 @@ figure img {
 }
 
 .footer-area .footer__item ul {
-    margin-top: 3.5rem;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
+}
+
+.footer-area .footer__item ul li {
+    line-height: 2;
 }
 
 .footer-area .footer__item ul li a {
