@@ -1095,7 +1095,7 @@
     }
     .people .questionnaire-answer-img {
         max-width: 165px;
-        margin: 0 auto;
+        margin: 0 auto 15px;
     }
     .people .questionnaire-answer-line {
         display: none;
