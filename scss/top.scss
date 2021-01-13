@@ -4,7 +4,11 @@ $font_notoSan: 'Noto Sans JP',
 sans-serif;
 .slick-slide {
     transition: .3s ease;
-    transform: scale(.62);
+    transform: translate(-6rem, -7rem) scale(0.62);
+    img {
+        display: block;
+        width: 100%;
+    }
 }
 
 .slick-current {
@@ -38,7 +42,7 @@ sans-serif;
     display: inline-block;
     max-width: 5rem;
     @include mobile {
-        max-width: 15px;
+        max-width: 30px;
     }
 }
 
@@ -127,7 +131,7 @@ sans-serif;
             span {
                 position: absolute;
                 display: none;
-                transform: rotate(45deg);
+                transform: rotate(50deg);
                 overflow: hidden;
                 &::after {
                     content: '';
@@ -137,9 +141,10 @@ sans-serif;
                     // animation: keyframe_linemove 3s linear 0s infinite;
                 }
                 &:nth-child(1) {
-                    width: 20px;
+                    width: 18px;
                     height: 140px;
-                    left: 36.8%;
+                    left: 40%; // 30.5rem;
+                    top: 1%; //0.5rem;
                     &::after {
                         background-color: #fff;
                     }
@@ -147,8 +152,8 @@ sans-serif;
                 &:nth-child(2) {
                     width: 4px;
                     height: 55px;
-                    left: 17.76%;
-                    top: 26.8%;
+                    left: 20%; //15rem;
+                    top: 27%; //22rem;
                     &::after {
                         background-color: #fff;
                     }
@@ -156,8 +161,8 @@ sans-serif;
                 &:nth-child(3) {
                     width: 4px;
                     height: 155px;
-                    left: 32.895%;
-                    top: 15.35%;
+                    left: 35%; //27rem;
+                    top: 16%; //13rem;
                     &::after {
                         background-color: #00c473;
                     }
@@ -165,8 +170,8 @@ sans-serif;
                 &:nth-child(4) {
                     width: 4px;
                     height: 130px;
-                    right: 15.15%;
-                    top: 22.35%;
+                    right: 13%; //9.5rem;
+                    top: 40%; //32.5rem;
                     &::after {
                         background-color: #13535f;
                     }
@@ -174,17 +179,17 @@ sans-serif;
                 &:nth-child(5) {
                     width: 12px;
                     height: 105px;
-                    left: 24.34%;
-                    bottom: 13.15%;
+                    left: 27%; //20.5rem;
+                    bottom: 7%; //5rem;
                     &::after {
                         background-color: #d0e37c;
                     }
                 }
                 &:nth-child(6) {
-                    width: 4px;
+                    width: 7px;
                     height: 130px;
-                    right: 17%;
-                    bottom: 19.7%;
+                    right: 14%; //11rem;
+                    bottom: 11%; //9rem;
                     &::after {
                         background-color: #006859;
                     }
@@ -193,24 +198,52 @@ sans-serif;
         }
         @include ipadpro {
             margin: 0;
+            .item_decoretion {
+                span {
+                    &:nth-child(1) {
+                        width: 10px;
+                        height: 70px;
+                    }
+                    &:nth-child(2) {
+                        width: 4px;
+                        height: 40px;
+                    }
+                    &:nth-child(3) {
+                        width: 4px;
+                        height: 70px;
+                        top: 22%;
+                    }
+                    &:nth-child(4) {
+                        width: 4px;
+                        height: 60px;
+                    }
+                    &:nth-child(5) {
+                        width: 12px;
+                        height: 50px;
+                    }
+                    &:nth-child(6) {
+                        width: 7px;
+                        height: 70px;
+                    }
+                }
+            }
         }
     }
     .mv__slider-content {
         position: absolute;
-        top: 50%;
+        top: 35.5%;
         left: 17%;
-        right: 0;
-        bottom: 0;
-        transform: translateY(-50%);
+        // transform: translateY(-50%);
         h3 {
             .sub-title {
                 font-family: font_clearsan_medium, sans-serif;
                 font-size: 2rem;
                 color: #008177;
                 margin-bottom: 4.5rem;
-                letter-spacing: .1rem;
+                letter-spacing: .3rem;
                 display: block;
                 margin-left: 1rem;
+                font-weight: 500;
             }
             .title {
                 font-family: $font_notoSan;
@@ -221,7 +254,8 @@ sans-serif;
                 margin-bottom: 1.4rem;
                 line-height: 0.65;
                 padding: 2rem 1rem;
-                &:first-child {
+                letter-spacing: 1rem;
+                &.first-child {
                     color: #123e5e;
                 }
                 &.stroke {
@@ -236,6 +270,20 @@ sans-serif;
                 }
             }
         }
+        @include ipadpro {
+            top: 50%;
+            left: 17%;
+            transform: translateY(-50%);
+            h3 {
+                .sub-title {
+                    font-size: 1.6rem;
+                    margin-bottom: 2.5rem;
+                }
+                .title {
+                    font-size: 6.4rem;
+                }
+            }
+        }
         @include mobile {
             left: 20px;
             h3 {
@@ -243,6 +291,7 @@ sans-serif;
                     font-size: 1.4rem;
                 }
                 .title {
+                    padding: 1rem;
                     font-size: 12.5vw;
                 }
             }
@@ -289,9 +338,11 @@ sans-serif;
         font-family: font_clearsan_medium;
         color: #fff;
         margin-right: 2.5rem;
+        letter-spacing: .15rem;
     }
     .article__detail {
         color: #fff;
+        letter-spacing: .16rem;
     }
     @include mobile {
         margin-top: 5rem;
@@ -305,21 +356,23 @@ sans-serif;
 .comp-work {
     margin-top: 10rem;
     .decoration {
-        bottom: 0;
+        bottom: 44px;
         right: 0;
     }
     .comp-work__wrap {
         width: 100%;
+        margin-top: 2rem;
     }
     .comp-work__detail {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-end;
-        transform: translate(-3.5rem, -22rem);
+        transform: translate(0, -22rem);
+        padding-right: 3.5rem;
         .box {
-            width: 100%;
-            max-width: 520px;
+            width: 520px;
+            max-width: calc(50% - 10px);
             background-color: #fff;
             text-align: center;
             display: flex;
@@ -349,9 +402,15 @@ sans-serif;
             .title {
                 color: #333;
                 font-size: 2.5rem;
+                min-height: 7rem;
                 font-weight: 500;
                 line-height: 1.4;
-                margin-bottom: 1rem;
+                /* margin-bottom: 0.5rem; */
+                display: flex;
+                margin-top: 2rem;
+                align-items: center;
+                justify-content: center;
+                letter-spacing: .2rem;
             }
             .desc {
                 line-height: 2;
@@ -362,13 +421,21 @@ sans-serif;
             }
         }
     }
+    @include ipadpro {
+        .comp-work__detail {
+            padding: 0;
+            transform: translate(0, -15vw);
+        }
+    }
     @include mobile {
         .comp-work__detail {
-            transform: translate(0, -15vw);
             .box {
+                width: 100%;
                 max-width: 100%;
                 margin: 0;
                 margin-top: 3rem;
+                padding: 3rem 2rem;
+                border: 2px solid #bebebe;
                 .tag {
                     &::before {
                         width: 3px;
@@ -410,25 +477,9 @@ sans-serif;
             font-size: 40rem;
             font-family: font_clearsan_thin;
             letter-spacing: 20px;
-            transform: translate(19.815vw, 5.5vw);
-        }
-        @include ipadpro {
-            figure {
-                height: 78rem;
-                img {
-                    height: 100%;
-                    object-fit: cover;
-                }
-            }
+            transform: translate(18.3vw, 2.5vw);
         }
         @include mobile {
-            figure {
-                height: auto;
-                img {
-                    height: auto;
-                    object-fit: unset;
-                }
-            }
             .text {
                 font-size: 10rem;
                 transform: translate(20px, 0);
@@ -439,14 +490,14 @@ sans-serif;
         width: 100%;
         text-align: center;
         padding-bottom: 13rem;
-        margin-top: 200px;
+        margin-top: 15.4rem;
     }
     .interview__list {
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin-top: 4.5rem;
+        margin-top: 5.5rem;
         .item {
             width: 100%;
             max-width: calc(25% - 40px);
@@ -525,7 +576,7 @@ sans-serif;
             }
         }
     }
-    @include mobile {
+    @include ipadpro {
         .interview__wrap {
             margin-top: 5rem;
             padding-bottom: 5rem;
@@ -580,7 +631,7 @@ sans-serif;
             font-size: 400px;
             font-family: font_clearsan_thin;
             letter-spacing: 20px;
-            transform: translateX(-10vw);
+            transform: translateX(-11.5vw);
         }
     }
     .career-plan {
@@ -594,7 +645,7 @@ sans-serif;
                 color: #333;
                 font-weight: 500;
                 font-size: 3rem;
-                letter-spacing: .1rem;
+                letter-spacing: .3rem;
                 line-height: 1.6;
                 transition: all .3s ease;
                 &:hover {
@@ -608,6 +659,7 @@ sans-serif;
                 font-family: font_clearsan_medium;
                 font-size: 2rem;
                 margin-bottom: 2.75rem;
+                letter-spacing: .2rem;
                 &::before {
                     content: '';
                     width: 5px;
@@ -640,6 +692,21 @@ sans-serif;
     }
     @include ipadpro {
         padding-top: 18rem; // 2rem 0 2rem;
+        .career-plan {
+            h2 {
+                a {
+                    font-size: 2.5rem;
+                }
+                span {
+                    font-size: 1.4rem;
+                }
+            }
+            &.first-child {
+                figure {
+                    transform: translate(-15vw, 115px);
+                }
+            }
+        }
     }
     @include mobile {
         padding-top: 10rem;
@@ -651,14 +718,10 @@ sans-serif;
             }
         }
         .career-plan {
-            padding-top: 5rem;
-            padding-bottom: 5rem;
+            padding: 5rem 0;
             h2 {
                 a {
-                    font-size: 2.5rem;
-                    &:hover {
-                        opacity: 0.75;
-                    }
+                    font-size: 2rem;
                 }
                 span {
                     font-size: 1.6rem;
