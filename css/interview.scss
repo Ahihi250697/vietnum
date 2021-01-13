@@ -51,8 +51,12 @@
 .c-topic-interview{
 	top: -80px;
 }
+.c-nextcontens--interview{
+	padding-right: 0;
+	padding-left: 0;
+}
 .c-nextcontens.c-nextcontens--interview p{
-	font-size: 2rem !important;
+	font-size: 2rem;
 }
 .interview{
 	padding-top: 270px;
@@ -106,7 +110,7 @@
 				z-index: 0;
 				top: 50%;
 				right: -5px;
-				width: 3px;
+				width: 4px;
 				height: 30px;
 				background-color: #187f77;
 				transform: translateY(-50%) rotate(27deg);
@@ -144,25 +148,15 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: stretch;
-		position: relative;
-		z-index: 0;
-		&::before{
-			content: '';
-			position: absolute;
-			z-index: 0;
-			width: 1px;
-			height: calc(100% - 150px);
-			background-color: #d6d6d6;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -65%);
-		}
 		&--one-child::before{
 			display: none;
 		}
 		&--one-child .question__list__child{
 			max-width: 100%;
 			min-height: auto;
+			&::before{
+				display: none;
+			}
 			p.title{
 				text-align: center;
 			}
@@ -175,6 +169,21 @@
 			width: 100%;
 			min-height: 500px;
 			margin-bottom: 110px;
+			&:first-of-type{
+				position: relative;
+				z-index: 0;
+				&::before{
+					content: '';
+					position: absolute;
+					z-index: 0;
+					width: 1px;
+					height: calc(100% - 150px);
+					background-color: #d6d6d6;
+					top: 50%;
+					right: 0;
+					transform: translate(120px, -50%);
+				}
+			}
 			p.title{
 				font-family: font_clearsan_medium;
 				letter-spacing: 2px;
@@ -278,6 +287,12 @@
 			flex-flow: column nowrap;
 			figure{
 				max-width: 100%;
+				img{
+					margin: auto;
+				}
+				&::before{
+					display: none;
+				}
 			}
 			&__content{
 				max-width: 100%;
@@ -293,6 +308,9 @@
 		&__list{
 			&__child{
 				max-width: calc(50% - 30px);
+				&:first-of-type::before{
+					transform: translate(30px, -50%);
+				}
 				h3{
 					font-size: 2rem;
 				}
@@ -333,10 +351,19 @@
 		}
 		&__list{
 			flex-flow: column nowrap;
+			&::before{
+				display: none;
+			}
 			&__child{
 				max-width: 100%;
 				min-height: unset;
 				margin-bottom: 70px;
+				p.title{
+					margin-bottom: 20px;
+				}
+				h3{
+					margin-bottom: 15px;
+				}
 			}
 		}
 	}
@@ -363,5 +390,8 @@
 				font-size: 1.4rem;
 			}
 		}
+	}
+	.c-nextcontens.c-nextcontens--interview p{
+		font-size: 1.6rem;
 	}
 }

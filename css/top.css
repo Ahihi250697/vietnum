@@ -714,7 +714,7 @@
     color: #333;
     font-weight: 500;
     font-size: 3rem;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.3rem;
     line-height: 1.6;
     transition: all 0.3s ease;
 }
@@ -730,6 +730,7 @@
     font-family: font_clearsan_medium;
     font-size: 2rem;
     margin-bottom: 2.75rem;
+    letter-spacing: 0.2rem;
 }
 
 .career .career-plan h2 span::before {

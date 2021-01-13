@@ -645,7 +645,7 @@ sans-serif;
                 color: #333;
                 font-weight: 500;
                 font-size: 3rem;
-                letter-spacing: .1rem;
+                letter-spacing: .3rem;
                 line-height: 1.6;
                 transition: all .3s ease;
                 &:hover {
@@ -659,6 +659,7 @@ sans-serif;
                 font-family: font_clearsan_medium;
                 font-size: 2rem;
                 margin-bottom: 2.75rem;
+                letter-spacing: .2rem;
                 &::before {
                     content: '';
                     width: 5px;
