@@ -293,6 +293,7 @@ a:hover{
 
 .c-nextcontents-lists {
     display: flex;
+    width: 100%;
     max-width: 970px;
     margin-left: auto;
     margin-right: auto;
@@ -309,7 +310,7 @@ a:hover{
 
 .c-nextcontents-lists .c-nextcontents-list {
     max-width: 428px;
-    width: calc(50% - 10px);
+    width: calc(50% - 20px);
 }
 
 .c-nextcontents-lists .c-nextcontents-list p {
