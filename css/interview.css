@@ -307,7 +307,7 @@
         padding: 50px 35px;
     }
     .interview {
-        padding-top: 130px;
+        padding-top: 110px;
     }
     .interview h2 {
         font-size: 2rem;
@@ -359,6 +359,9 @@
 }
 
 @media screen and (max-width: 767px) {
+    .interview-mv{
+      padding-bottom: 110px;
+    }
     .interview-mv__content {
         max-width: 100%;
         position: static;
