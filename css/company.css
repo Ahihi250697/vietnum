@@ -1,9 +1,11 @@
-.library-cm .style-title, .library-cm .company-history-year,
+.library-cm .style-title,
+.library-cm .company-history-year,
 .library-cm .company-history-last p:first-of-type {
     font-size: 1em;
 }
 
-.library-cm .company-infor-dt, .library-cm .company-history .year-text {
+.library-cm .company-infor-dt,
+.library-cm .company-history .year-text {
     font-size: 1.8em;
 }
 
@@ -11,7 +13,8 @@
     font-size: 3em;
 }
 
-.library-cm .style-title .text-nihon, .library-cm .company-trends-linehead {
+.library-cm .style-title .text-nihon,
+.library-cm .company-trends-linehead {
     font-size: 2.8em !important;
 }
 
@@ -41,7 +44,7 @@
     display: block;
     color: inherit;
     -webkit-transition: opacity .3s ease;
-            transition: opacity .3s ease;
+    transition: opacity .3s ease;
 }
 
 .library-cm a:hover {
@@ -55,7 +58,8 @@
     cursor: pointer;
 }
 
-.library-cm button, .library-cm a {
+.library-cm button,
+.library-cm a {
     outline: none;
 }
 
@@ -101,7 +105,8 @@
     margin-top: 95px;
 }
 
-.library-cm .company-bulletin, .library-cm .company-infor {
+.library-cm .company-bulletin,
+.library-cm .company-infor {
     padding: 100px 0;
 }
 
@@ -137,13 +142,13 @@
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-        flex-direction: column;
+    flex-direction: column;
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
 }
 
-.library-cm .company-bulletin-board.even .company-bulletin-content > * {
+.library-cm .company-bulletin-board.even .company-bulletin-content>* {
     max-width: 610px;
     width: 100%;
 }
@@ -164,7 +169,7 @@
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-        flex-direction: column;
+    flex-direction: column;
 }
 
 .library-cm .company-bulletin-img {
@@ -183,7 +188,7 @@
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-        flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -227,7 +232,7 @@
     border-top: 1px solid #dcdcdc;
 }
 
-.library-cm .company-infor-dl > * {
+.library-cm .company-infor-dl>* {
     padding: 35px 0;
 }
 
@@ -283,14 +288,14 @@
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-        flex-direction: column;
+    flex-direction: column;
 }
 
 .library-cm .company-trends-dl dd {
     margin-top: 1.5px;
 }
 
-.library-cm .company-trends-dl > * {
+.library-cm .company-trends-dl>* {
     padding: 15px 0;
     text-align: center;
 }
@@ -323,7 +328,7 @@
     font-weight: bold;
 }
 
-.library-cm .company-trends-dl:first-of-type > * {
+.library-cm .company-trends-dl:first-of-type>* {
     background-color: #2e6fef;
 }
 
@@ -421,16 +426,16 @@
     z-index: 1;
     position: absolute;
     -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
     -webkit-transition: -webkit-transform .3s ease;
-            transition: -webkit-transform .3s ease;
-            transition: transform .3s ease;
-            transition: transform .3s ease, -webkit-transform .3s ease;
+    transition: -webkit-transform .3s ease;
+    transition: transform .3s ease;
+    transition: transform .3s ease, -webkit-transform .3s ease;
 }
 
 .library-cm .company-history-step.active::before {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
 }
 
 .library-cm .company-history-dot {
@@ -459,7 +464,7 @@
     left: 50%;
     bottom: calc(100% + 20px);
     -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+    transform: translateX(-50%);
     white-space: nowrap;
     line-height: 1;
 }
@@ -496,12 +501,11 @@
     }
 }
 
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+@media all and (-ms-high-contrast: none),
+(-ms-high-contrast: active) {
     .library-cm .company-history-bttn {
         top: 50%;
         -webkit-transform: translateY(-50%);
-                transform: translateY(-50%);
+        transform: translateY(-50%);
     }
 }
-
-/*# sourceMappingURL=sourcemap/company.css.map */

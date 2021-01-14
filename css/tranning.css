@@ -824,26 +824,26 @@
     }
 }
 
-.p-tranning01::after {
-    content: "";
-    background: url(../images/tranning/text01.svg) no-repeat center;
-    background-size: contain;
-    width: 1800px;
-    height: 855px;
-    position: absolute;
-    left: 51%;
-    top: -165px;
-    transform: translateX(-50%);
-    z-index: -1;
-}
 
-@media only screen and (max-width: 768px) {
-    .p-tranning01::after {
-        width: 104%;
-        height: 42vw;
-        top: -50px;
-    }
+/* .p-tranning01::after {
+  content: "";
+  background: url(../images/tranning/text01.svg) no-repeat center;
+  background-size: contain;
+  width: 1800px;
+  height: 855px;
+  position: absolute;
+  left: 51%;
+  top: -165px;
+  transform: translateX(-50%);
+  z-index: -1;
 }
+@media only screen and (max-width: 768px) {
+  .p-tranning01::after {
+    width: 104%;
+    height: 42vw;
+    top: -50px;
+  }
+} */
 
 .p-tranning01 .c-line {
     position: absolute;
