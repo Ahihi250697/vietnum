@@ -1,8 +1,4 @@
-.people .firstView-textSink {
-    font-size: 37rem;
-}
-
-.people .firstView-h2 .text-nihon, .people .interview-h3 .text-nihon {
+.people .interview-h3 .text-nihon {
     font-size: 3.5rem;
 }
 
@@ -23,14 +19,10 @@
     font-size: 1.2rem;
 }
 
-.people .firstView-h2 .text-en, .people .interview-h3 .text-en,
-.people .interview-figure-name, .people .interview-infor-name .infor-name,
+.people .interview-h3 .text-en, .people .interview-figure-name,
+.people .interview-infor-name .infor-name,
 .people .questionnaire-answer-person .person-name {
     font-family: font_clearsan_medium, sans-serif;
-}
-
-.people .firstView-textSink {
-    font-family: font_clearsan_thin, sans-serif;
 }
 
 .library-cm img {
@@ -63,115 +55,6 @@
 
 .library-cm .d-block {
     display: block;
-}
-
-.people .firstView {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    position: relative;
-    z-index: 0;
-}
-
-.people .firstView-img {
-    max-width: calc(50% + 470px);
-    width: 100%;
-}
-
-.people .firstView-img img {
-    width: 100%;
-}
-
-.people .firstView-title {
-    position: absolute;
-    left: 0;
-    bottom: -50px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    z-index: 1;
-    width: 100%;
-    padding-left: 20px;
-    max-width: calc(50% - 80px);
-    max-height: 395px;
-    height: 25vw;
-    min-height: 230px;
-    background-color: #008177;
-    -webkit-transform: translateY(12.6%);
-            transform: translateY(12.6%);
-    min-width: 350px;
-}
-
-.people .firstView-h2 {
-    max-width: 475px;
-    width: 100%;
-    color: white;
-}
-
-.people .firstView-h2 span {
-    display: block;
-}
-
-.people .firstView-h2 .text-en {
-    font-weight: normal;
-    color: #4fd1ed;
-    text-transform: uppercase;
-    line-height: 1;
-    letter-spacing: .3rem;
-}
-
-.people .firstView-h2 .text-nihon {
-    line-height: 1.4;
-    margin-top: 20px;
-    letter-spacing: .2rem;
-}
-
-.people .firstView-textSink {
-    position: absolute;
-    top: calc(100% - 45px);
-    left: 0;
-    z-index: -2;
-    line-height: .8;
-    color: #004070;
-    width: 100%;
-    opacity: .05;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-        flex-direction: column;
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
-    font-size: clamp(31rem, 23vw, 37rem);
-}
-
-.people .firstView-textSink span {
-    display: block;
-    white-space: nowrap;
-    width: 100%;
-    letter-spacing: 1.5rem;
-}
-
-.people .firstView-textSink span:first-of-type {
-    max-width: calc(50% + 800px);
-    text-indent: -70px;
-}
-
-.people .firstView-textSink span:last-of-type {
-    max-width: calc(50% + 530px);
-    width: calc(100% - 210px);
 }
 
 .people .breaklink {
@@ -912,12 +795,6 @@
     width: 100%;
 }
 
-.c-topic {
-    margin: 0;
-    width: auto;
-    display: block;
-}
-
 .c-nextcontens {
     padding-right: 0;
     padding-left: 0;
@@ -941,10 +818,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .people .firstView-textSink {
-        font-size: 18rem;
-    }
-    .people .firstView-h2 .text-nihon, .people .interview-h3 .text-nihon {
+    .people .interview-h3 .text-nihon {
         font-size: 2rem;
     }
     .people .questionnaire-question-title {
@@ -956,33 +830,6 @@
     }
     .people .interview-infor-content {
         font-size: 1.4rem;
-    }
-    .people .firstView {
-        display: block;
-    }
-    .people .firstView-title {
-        padding: 20px;
-        -webkit-transform: none;
-                transform: none;
-        height: 25vw;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        min-width: 260px;
-        min-height: 120px;
-    }
-    .people .firstView-h2 .text-nihon {
-        margin-top: 10px;
-    }
-    .people .firstView-textSink {
-        top: calc(100% - 3vw);
-    }
-    .people .firstView-textSink span:first-of-type {
-        text-indent: -20px;
-    }
-    .people .firstView-textSink span:last-of-type {
-        max-width: calc(100% - 14vw);
-        width: 100%;
     }
     .people .breaklink {
         padding: 0;
@@ -1099,9 +946,6 @@
     }
     .people .questionnaire-answer-line {
         display: none;
-    }
-    .c-topic {
-        padding: 20px 0 15px;
     }
 }
 
