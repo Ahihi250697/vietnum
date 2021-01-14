@@ -359,6 +359,9 @@
 }
 
 @media screen and (max-width: 767px) {
+    .interview-mv{
+      padding-bottom: 110px;
+    }
     .interview-mv__content {
         max-width: 100%;
         position: static;
