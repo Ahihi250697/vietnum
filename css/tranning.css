@@ -694,7 +694,7 @@
     max-height: 490px;
   }
 }
-.p-tranning01::after {
+/* .p-tranning01::after {
   content: "";
   background: url(../images/tranning/text01.svg) no-repeat center;
   background-size: contain;
@@ -712,7 +712,7 @@
     height: 42vw;
     top: -50px;
   }
-}
+} */
 .p-tranning01 .c-line {
   position: absolute;
   width: 100%;
