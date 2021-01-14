@@ -20,7 +20,7 @@
     display: block;
     color: inherit;
     -webkit-transition: opacity .3s ease;
-            transition: opacity .3s ease;
+    transition: opacity .3s ease;
 }
 
 .library-cm a:hover {
@@ -34,7 +34,8 @@
     cursor: pointer;
 }
 
-.library-cm button, .library-cm a {
+.library-cm button,
+.library-cm a {
     outline: none;
 }
 
@@ -77,5 +78,3 @@
         padding: 40px 0 70px;
     }
 }
-
-/*# sourceMappingURL=sourcemap/mesaage.css.map */

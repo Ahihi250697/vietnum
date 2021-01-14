@@ -57,7 +57,14 @@ body {
 
 .l-container {
     width: 1120px;
+    max-width: 100%;
     margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+    .l-container {
+        padding: 0 20px;
+    }
 }
 
 p,
