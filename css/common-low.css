@@ -229,7 +229,7 @@ a:hover {
 
 @media only screen and (max-width: 768px) {
     .c-nextcontens {
-        padding: 60px 15px 60px 15px;
+        padding: 60px 0px 60px;
     }
 }
 
