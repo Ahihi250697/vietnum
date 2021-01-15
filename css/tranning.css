@@ -16,7 +16,7 @@
     justify-content: center;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 768px) {
     .c-chart01 {
         align-items: flex-end;
         margin-bottom: 15px;
@@ -28,13 +28,15 @@
     font-weight: 500;
     opacity: 0.8;
     margin: 0 10px 0 25px;
+    width: 202px;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 768px) {
     .c-chart01 p:not(.c-chart01__ball) {
         font-size: 4rem;
         margin: 0;
         line-height: 1;
+        width: 108px;
     }
 }
 
@@ -44,7 +46,7 @@
     font-family: font_clearsan;
 }
 
-@media only screen and (max-width: 1024) {
+@media only screen and (max-width: 768px) {
     .c-chart01 p:not(.c-chart01__ball) .num {
         font-size: 10rem;
         position: relative;
@@ -498,7 +500,7 @@
     margin-bottom: 21px;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 768px) {
     .c-chart04__item p .txt01 {
         font-size: 3rem;
         margin-bottom: 8px;
@@ -511,7 +513,7 @@
     margin-bottom: 20px;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 768px) {
     .c-chart04__item p .txt02 {
         font-size: 1.4rem;
         margin-bottom: 10px;
@@ -563,6 +565,16 @@
     margin-bottom: 14px;
 }
 
+.c-chart04__item--1 p label {
+    width: 92px;
+}
+
+@media only screen and (max-width: 768px) {
+    .c-chart04__item--1 p label {
+        width: 55px;
+    }
+}
+
 .c-chart04__item--2 figure {
     width: 130px;
 }
@@ -572,6 +584,12 @@
         width: 80px;
         position: relative;
         top: -8px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .c-chart04__item--2 p {
+        width: 135px;
     }
 }
 
@@ -602,6 +620,12 @@
 @media only screen and (max-width: 768px) {
     .c-chart04__item--3 h4 {
         margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .c-chart04__item--3 p {
+        width: 210px;
     }
 }
 
@@ -640,6 +664,12 @@
 @media only screen and (max-width: 768px) {
     .c-chart04__item--4 h4 {
         margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .c-chart04__item--4 p {
+        width: 175px;
     }
 }
 
