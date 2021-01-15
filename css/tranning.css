@@ -118,7 +118,10 @@
     padding: 28px;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
+    .c-chart02__content {
+        justify-content: center;
+    }
     .c-chart02__item {
         width: 100%;
         height: auto;
