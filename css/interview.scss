@@ -48,8 +48,11 @@
 		}
 	}
 }
+.breaklink-interview{
+	padding-top: 0;
+}
 .c-topic-interview{
-	top: -80px;
+	top: -110px;
 }
 .c-nextcontens--interview{
 	padding-right: 0;
@@ -260,6 +263,7 @@
 
 @media screen and (max-width: 1023px){
 	.interview-mv{
+		padding-bottom: 80px;
 		&__bg{
 			max-width: 100%;
 		}
@@ -337,6 +341,7 @@
 		position: static;
 	}
 	.interview{
+		padding-top: 90px;
 		&__profile{
 			margin-top: 70px;
 			padding: 50px 0;
