@@ -213,6 +213,7 @@ figure {
             right: 0;
             bottom: 0;
             background-color: #000;
+            overflow-y: auto;
             transform: translateX(150%);
             .nav__menu {
                 flex-wrap: wrap;
@@ -492,12 +493,33 @@ figure {
             }
         }
     }
+    &.sp-only {
+        margin-top: 0;
+        display: none;
+        .link__container {
+            border: 0;
+            a {
+                p {
+                    text-align: left;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    @include ipadpro {
+        &.sp-only {
+            display: block;
+        }
+    }
     @include near_ipadpro {
         .link__container {
             padding-bottom: 3rem;
             a {
                 max-width: 100%;
                 margin-top: 3rem;
+                p {
+                    text-align: left;
+                }
             }
         }
     }

@@ -242,6 +242,7 @@ figure img {
         right: 0;
         bottom: 0;
         background-color: #000;
+        overflow-y: auto;
         transform: translateX(150%);
     }
     .nav .nav__navbar .nav__menu {
@@ -550,6 +551,26 @@ figure img {
     display: inline-block;
 }
 
+.link-area.sp-only {
+    margin-top: 0;
+    display: none;
+}
+
+.link-area.sp-only .link__container {
+    border: 0;
+}
+
+.link-area.sp-only .link__container a p {
+    text-align: left;
+    color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+    .link-area.sp-only {
+        display: block;
+    }
+}
+
 @media screen and (max-width: 1023px) {
     .link-area .link__container {
         padding-bottom: 3rem;
@@ -557,6 +578,9 @@ figure img {
     .link-area .link__container a {
         max-width: 100%;
         margin-top: 3rem;
+    }
+    .link-area .link__container a p {
+        text-align: left;
     }
 }
 
