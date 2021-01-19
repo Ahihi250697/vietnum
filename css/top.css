@@ -432,7 +432,7 @@
 }
 
 .comp-work .comp-work__detail .box .tag {
-    display: table;
+    display: ruby;
     margin: 0 auto;
     color: #008177;
     font-family: font_clearsan_medium;
