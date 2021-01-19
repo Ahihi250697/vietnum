@@ -957,6 +957,10 @@
     --abackground: #d0e37c;
 }
 
+.p-tranning01 .c-line .c-line__item01::after {
+    background: #d0e37c;
+}
+
 @media only screen and (max-width: 768px) {
     .p-tranning01 .c-line__item01 {
         bottom: -20px;
@@ -973,6 +977,10 @@
     bottom: -47px;
     left: -121px;
     transform: rotate(-40deg);
+}
+
+.p-tranning01 .c-line .c-line__item02::after {
+    background: #21cb85;
 }
 
 @media only screen and (max-width: 768px) {
@@ -993,6 +1001,10 @@
     transform: rotate(-41deg);
 }
 
+.p-tranning01 .c-line .c-line__item03::after {
+    background: #11c87c;
+}
+
 @media only screen and (max-width: 768px) {
     .p-tranning01 .c-line__item03 {
         top: -40px;
@@ -1009,6 +1021,10 @@
     bottom: -89px;
     right: 151px;
     transform: rotate(-41deg);
+}
+
+.p-tranning01 .c-line .c-line__item04::after {
+    background: #006859;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1029,6 +1045,10 @@
     transform: rotate(-41deg);
 }
 
+.p-tranning01 .c-line .c-line__item05::after {
+    background: #d0e37c;
+}
+
 @media only screen and (max-width: 768px) {
     .p-tranning01 .c-line__item05 {
         top: -30px;
@@ -1045,6 +1065,10 @@
     bottom: -65px;
     right: -5px;
     transform: rotate(-42deg);
+}
+
+.p-tranning01 .c-line .c-line__item06::after {
+    background: #21cb85;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1065,6 +1089,10 @@
     transform: rotate(-42deg);
 }
 
+.p-tranning01 .c-line .c-line__item07::after {
+    background: #21cb85;
+}
+
 @media only screen and (max-width: 768px) {
     .p-tranning01 .c-line__item07 {
         top: -50px;
@@ -1081,6 +1109,10 @@
     bottom: -96px;
     right: -110px;
     transform: rotate(-42deg);
+}
+
+.p-tranning01 .c-line .c-line__item08::after {
+    background: #235e6a;
 }
 
 @media only screen and (max-width: 768px) {
