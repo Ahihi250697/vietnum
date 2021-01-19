@@ -1144,7 +1144,7 @@
     width: 1px;
     height: 60px;
     position: absolute;
-    left: 51%;
+    left: calc(50% - 1px);
     bottom: 0;
 }
 
@@ -1304,7 +1304,7 @@
     width: 1px;
     height: 60px;
     position: absolute;
-    left: 51%;
+    left: calc(50% - 1px);
     bottom: 0;
 }
 
